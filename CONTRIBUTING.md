@@ -23,6 +23,12 @@ It is easiest to fill out these forms by making an account for the venue of inte
 
 See [DEVELOPMENT.md](DEVELOPMENT.md) for tips on using playwright, debugging, and running unit tests.
 
+For configurable ScholarOne, HotCRP, EDAS, CMT, OpenReview, EasyChair, and IEEE
+Author Portal deployments, see [docs/cs-venues.md](docs/cs-venues.md). Keep each
+conference year/cycle separate, source its portal URL and rules, and mark facts
+that could not be fetched as unverified. Never copy last year's limits as facts
+for a new edition. The configurable filler has no manuscript action clicks.
+
 ## Before opening a pull request
 
 - Run `python tests/sample_subfiles.py` to generate sample subfiles for the new venue.
@@ -33,3 +39,17 @@ See [DEVELOPMENT.md](DEVELOPMENT.md) for tips on using playwright, debugging, an
 - Format with `black . -l 99999`
 
 Thank you for helping make venue submission a single click.
+
+## IEEE journals through Author Portal
+
+An arbitrary IEEE Author Portal target needs no new entry: use `ieee:<journal-code>`
+from its public submission link (see [IEEE workflow and examples](docs/cs-venues.md#any-ieee-author-portal-journal)).
+To add sourced journal-specific rules, inherit `ieee` in both databases, keep
+only the journal's field overrides and independently sourced limits, and record
+the public URL verifying its portal code. Use a thin `RexVenue` binding under
+`paperpush/venues/rex/`; shared fields and generic style guidance belong to the
+base, never guessed per-journal limits. Preserve existing slugs. A different
+submission platform keeps its own runner and portal metadata; IEEE style
+inheritance alone does not prove it uses ReX. Run fixture tests and generators;
+these changes were not tested against a live portal. Wizard navigation and all
+confirmation/save/submit actions remain manual.

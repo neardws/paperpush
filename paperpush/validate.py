@@ -165,7 +165,7 @@ def _check_file_field(field: Field, raw: str) -> list[Issue]:
         issues.append(Issue(ERROR, field.id, f"not a regular file: {path}"))
         return issues
     if field.accept:
-        if path.suffix.lower() not in {s.lower() for s in field.accept}:
+        if not any(path.name.lower().endswith(s.lower()) for s in field.accept):
             issues.append(
                 Issue(
                     WARNING,
@@ -898,6 +898,8 @@ def validate(
     )
     issues: list[Issue] = list(_schema_issues(venue, subfile.values))
     values = subfile.values
+
+    issues.extend(Issue(WARNING, "venue", f"unverified: {note}") for note in venue.unverified)
 
     issues.extend(_upload_size_issues(venue, values))
     if check_links:

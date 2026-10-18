@@ -1,0 +1,28 @@
+# paperpush submission file for acm_tosn  -*- mode: yaml -*-
+# ACM Transactions on Sensor Networks
+#
+# Edit the values below, then run:  paperpush submit acm_tosn.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: acm_tosn
+# submission guide: https://dl.acm.org/journal/tosn/author-guidelines
+
+# Title (text, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://dl.acm.org/journal/tosn/author-guidelines. 
+title: An edge intelligence system
+
+# Abstract (textarea, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://dl.acm.org/journal/tosn/author-guidelines. 
+abstract: |
+  research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research
+
+# Authors (authorlist, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://dl.acm.org/journal/tosn/author-guidelines. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  Ada Example | ada@example.edu | Example University |  | yes
+
+# Manuscript (file, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://dl.acm.org/journal/tosn/author-guidelines. 
+manuscript_file: tests/manuscript_files/acm_tosn/manuscript.pdf
+
+# vim: set filetype=yaml :

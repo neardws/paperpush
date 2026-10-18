@@ -1,0 +1,1021 @@
+{
+  "retrieved": "2026-10-18",
+  "note": "HTTP 200 alone is not verification: shells, error pages and browser-compatibility pages were not used for facts. See venue entries for omitted/unverified facts. Cached body files named here are local scratch files, not shipped dependencies.",
+  "fetches": [
+    {
+      "url": "https://iclr.cc/Conferences/2027/AIPolicyForAuthors",
+      "retrieved": "2026-10-18",
+      "file": "06b1834e4a06.txt",
+      "status": 200,
+      "final_url": "https://iclr.cc/Conferences/2027/AIPolicyForAuthors",
+      "characters": 3803
+    },
+    {
+      "url": "https://ctan.org/pkg/ieeetran",
+      "retrieved": "2026-10-18",
+      "file": "08351c4530b5.txt",
+      "status": 200,
+      "final_url": "https://ctan.org/pkg/ieeetran",
+      "characters": 1675
+    },
+    {
+      "url": "https://www.computer.org/publications/author-resources/peer-review/journals-manuscript-submission",
+      "retrieved": "2026-10-18",
+      "file": "0f4e9f030cae.txt",
+      "status": 200,
+      "final_url": "https://www.computer.org/publications/author-resources/peer-review/journals-manuscript-submission",
+      "characters": 38
+    },
+    {
+      "url": "https://www.sigmobile.org/mobisys/2026/call_for_papers/",
+      "retrieved": "2026-10-18",
+      "file": "15ba3dd80bd9.txt",
+      "status": 200,
+      "final_url": "https://www.sigmobile.org/mobisys/2026/call_for_papers/",
+      "characters": 19354
+    },
+    {
+      "url": "https://sensys.acm.org/2026/cfp.html",
+      "retrieved": "2026-10-18",
+      "file": "1b1b816e6fa9.txt",
+      "status": 200,
+      "final_url": "https://sensys.acm.org/2026/cfp.html",
+      "characters": 9226
+    },
+    {
+      "url": "https://ctan.org/pkg/acmart",
+      "retrieved": "2026-10-18",
+      "file": "201ff16eb9ed.txt",
+      "status": 200,
+      "final_url": "https://ctan.org/pkg/acmart",
+      "characters": 1830
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/tosn",
+      "retrieved": "2026-10-18",
+      "file": "26b1989a5a96.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.ieeevtc.org/tvt/",
+      "retrieved": "2026-10-18",
+      "file": "29282eed20aa.txt",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-jsac",
+      "retrieved": "2026-10-18",
+      "file": "2a135bcf64ec.txt",
+      "status": 200,
+      "final_url": "https://www.comsoc.org/publications/journals/ieee-jsac",
+      "characters": 1092
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/tvt-ieee",
+      "retrieved": "2026-10-18",
+      "file": "2c92dbd1064c.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://ieee-iotj.org/guidelines-for-authors/",
+      "status": 200,
+      "characters": 9155,
+      "file": "309797b42985-browser.txt",
+      "retrieved": "2026-10-18"
+    },
+    {
+      "url": "https://ieee-iotj.org/guidelines-for-authors/",
+      "retrieved": "2026-10-18",
+      "file": "309797b42985.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/iot",
+      "retrieved": "2026-10-18",
+      "file": "34003e3ed19c.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors",
+      "retrieved": "2026-10-18",
+      "file": "3485f295fc1c.txt",
+      "status": 200,
+      "final_url": "https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors",
+      "characters": 2818
+    },
+    {
+      "url": "https://www.sigmobile.org/mobisys/2026/",
+      "retrieved": "2026-10-18",
+      "file": "3604c236f1b5.txt",
+      "status": 200,
+      "final_url": "https://www.sigmobile.org/mobisys/2026/",
+      "characters": 2014
+    },
+    {
+      "url": "https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html",
+      "retrieved": "2026-10-18",
+      "file": "3c09b9ed8fe5.txt",
+      "status": 200,
+      "final_url": "https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html",
+      "characters": 11382
+    },
+    {
+      "url": "https://www.computer.org/publications/author-resources/peer-review/journals-manuscript-submission#length",
+      "retrieved": "2026-10-18",
+      "file": "458201a48b08.txt",
+      "status": 200,
+      "final_url": "https://www.computer.org/publications/author-resources/peer-review/journals-manuscript-submission#length",
+      "characters": 38
+    },
+    {
+      "url": "https://easychair.org/help/article.cgi?art=46",
+      "retrieved": "2026-10-18",
+      "file": "46610ed00871.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.sigmobile.org/mobisys/2026/cfp.html",
+      "retrieved": "2026-10-18",
+      "file": "496911a657eb.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/",
+      "retrieved": "2026-10-18",
+      "file": "4a6c156c8b05.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-jsac/ieee-journal-selected-areas-communications-information-authors",
+      "retrieved": "2026-10-18",
+      "file": "4f8f427dc068.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/csur",
+      "retrieved": "2026-10-18",
+      "file": "50e65c9b17c6.txt",
+      "status": 200,
+      "final_url": "https://mc.manuscriptcentral.com/csur",
+      "characters": 3265
+    },
+    {
+      "url": "https://neurips.cc/Conferences/2025/CallForPapers",
+      "retrieved": "2026-10-18",
+      "file": "5462110f01ed.txt",
+      "status": 200,
+      "final_url": "https://neurips.cc/Conferences/2025/CallForPapers",
+      "characters": 17350
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/tist",
+      "retrieved": "2026-10-18",
+      "file": "5463c32507b9.txt",
+      "status": 200,
+      "final_url": "https://mc.manuscriptcentral.com/tist",
+      "characters": 3265
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/jsac",
+      "retrieved": "2026-10-18",
+      "file": "54e61f208925.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://tosn.acm.org/",
+      "retrieved": "2026-10-18",
+      "file": "58f57dc482a0.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.ieeevtc.org/tvt/paper.php",
+      "retrieved": "2026-10-18",
+      "file": "66ec9f895c5b.txt",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/t-its",
+      "retrieved": "2026-10-18",
+      "file": "68b466a05575.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-tnse",
+      "retrieved": "2026-10-18",
+      "file": "6974cf31a18f.txt",
+      "status": 200,
+      "final_url": "https://www.comsoc.org/publications/journals/ieee-tnse",
+      "characters": 3458
+    },
+    {
+      "url": "https://ieee-iotj.org/author-guidelines/",
+      "retrieved": "2026-10-18",
+      "file": "69a07b6454f4.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://tist.acm.org/",
+      "retrieved": "2026-10-18",
+      "file": "6b53bdb19fdd.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-twc/ieee-transactions-wireless-communications-guidelines-authors",
+      "retrieved": "2026-10-18",
+      "file": "6c1ccf0e271b.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-jsac/information-authors",
+      "retrieved": "2026-10-18",
+      "file": "6dfe7042bbc9.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://edas.info/doc/authors.html",
+      "retrieved": "2026-10-18",
+      "file": "6e1952373d75.txt",
+      "status": 200,
+      "final_url": "https://edas.info/doc/authors.html",
+      "characters": 7058
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/tnse-cs",
+      "retrieved": "2026-10-18",
+      "file": "70a409c0b3e6.txt",
+      "status": 200,
+      "final_url": "https://mc.manuscriptcentral.com/tnse-cs",
+      "characters": 3265
+    },
+    {
+      "url": "https://vtsociety.org/publication/ieee-transactions-vehicular-technology/author-information",
+      "retrieved": "2026-10-18",
+      "file": "71d1530cb1ac.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-journal-selected-areas-communications/information-authors",
+      "retrieved": "2026-10-18",
+      "file": "73af2e7ecfce.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://aaai.org/conference/aaai/aaai-27/submission-instructions/",
+      "retrieved": "2026-10-18",
+      "file": "73cc64e63b00.txt",
+      "status": 200,
+      "final_url": "https://aaai.org/conference/aaai/aaai-27/submission-instructions/",
+      "characters": 15115
+    },
+    {
+      "url": "https://easychair.org/conferences/",
+      "retrieved": "2026-10-18",
+      "file": "76e76a9d676c.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ieee-iotj.org/guidelines-for-authors",
+      "retrieved": "2026-10-18",
+      "file": "79401c8bf643.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://authors.acm.org/proceedings/production-information/taps-production-workflow",
+      "retrieved": "2026-10-18",
+      "file": "7bfbbcacd094.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://vtsociety.org/publication/ieee-transactions-vehicular-technology",
+      "retrieved": "2026-10-18",
+      "file": "7c5fc30224a5.txt",
+      "status": 200,
+      "final_url": "https://vtsociety.org/publication/ieee-transactions-vehicular-technology",
+      "characters": 44022
+    },
+    {
+      "url": "https://iclr.cc/Conferences/2026/CallForPapers",
+      "retrieved": "2026-10-18",
+      "file": "7eab641458d5.txt",
+      "status": 200,
+      "final_url": "https://iclr.cc/Conferences/2026/CallForPapers",
+      "characters": 3083
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/tpds-cs",
+      "retrieved": "2026-10-18",
+      "file": "810111b725dd.txt",
+      "status": 200,
+      "final_url": "https://mc.manuscriptcentral.com/tpds-cs",
+      "characters": 3265
+    },
+    {
+      "url": "https://iclr.cc/Conferences/2027/AuthorGuidelines",
+      "retrieved": "2026-10-18",
+      "file": "866620528728.txt",
+      "status": 200,
+      "final_url": "https://iclr.cc/Conferences/2027/AuthorGuidelines",
+      "characters": 25996
+    },
+    {
+      "url": "https://sensys.acm.org/2026/",
+      "retrieved": "2026-10-18",
+      "file": "8f110a79d90b.txt",
+      "status": 200,
+      "final_url": "https://sensys.acm.org/2026/",
+      "characters": 2501
+    },
+    {
+      "url": "https://www.acm.org/publications/authors/submissions",
+      "retrieved": "2026-10-18",
+      "file": "901d185cc8b7.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://iclr.cc/Conferences/2027/AuthorGuide",
+      "retrieved": "2026-10-18",
+      "file": "985d51f517f8.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://easychair.org/help/faq",
+      "retrieved": "2026-10-18",
+      "file": "998e1f186631.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.computer.org/csdl/journal/tm/write-for-us/15045",
+      "status": 200,
+      "characters": 1469,
+      "file": "9a31918a2dfa-browser.txt",
+      "retrieved": "2026-10-18"
+    },
+    {
+      "url": "https://www.computer.org/csdl/journal/tm/write-for-us/15045",
+      "retrieved": "2026-10-18",
+      "file": "9a31918a2dfa.txt",
+      "status": 200,
+      "final_url": "https://www.computer.org/csdl/journal/tm/write-for-us/15045",
+      "characters": 28
+    },
+    {
+      "url": "https://help.hotcrp.com/",
+      "retrieved": "2026-10-18",
+      "file": "9e5441da868a.txt",
+      "status": 200,
+      "final_url": "https://help.hotcrp.com/",
+      "characters": 405
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-twc",
+      "retrieved": "2026-10-18",
+      "file": "9e78a5683770.txt",
+      "status": 200,
+      "final_url": "https://www.comsoc.org/publications/journals/ieee-twc",
+      "characters": 3080
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/tmc-cs",
+      "retrieved": "2026-10-18",
+      "file": "a05a14e0ab14.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-transactions-wireless-communications/author-guidelines",
+      "status": 404,
+      "characters": 1684,
+      "file": "a3bf2772d527-browser.txt",
+      "retrieved": "2026-10-18"
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-transactions-wireless-communications/author-guidelines",
+      "retrieved": "2026-10-18",
+      "file": "a3bf2772d527.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+      "retrieved": "2026-10-18",
+      "file": "a4857dd485c3.txt",
+      "status": 200,
+      "final_url": "https://neurips.cc/Conferences/2026/CallForPapers",
+      "characters": 2859
+    },
+    {
+      "url": "https://dl.acm.org/journal/tosn/author-guidelines",
+      "retrieved": "2026-10-18",
+      "file": "a8cfe9f11fbb.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "retrieved": "2026-10-18",
+      "file": "a9237783961a.txt",
+      "status": 200,
+      "final_url": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "characters": 4895
+    },
+    {
+      "url": "https://aaai.org/conference/aaai/aaai-26/submission-instructions/",
+      "retrieved": "2026-10-18",
+      "file": "ab0668d09eea.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://help.hotcrp.com/submit/",
+      "retrieved": "2026-10-18",
+      "file": "b0cd747c17ab.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://infocom2025.ieee-infocom.org/authors/call-papers",
+      "retrieved": "2026-10-18",
+      "file": "b5e7e0448815.txt",
+      "error": "HTTP Error 418: Unknown Code"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/borisveytsman/acmart/primary/README",
+      "retrieved": "2026-10-18",
+      "file": "b743ec7186b4.txt",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/borisveytsman/acmart/primary/README",
+      "characters": 15924
+    },
+    {
+      "url": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call-for-papers/",
+      "retrieved": "2026-10-18",
+      "file": "b78a4e0750b8.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://mc.manuscriptcentral.com/twc",
+      "retrieved": "2026-10-18",
+      "file": "bae0e0909968.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://help.hotcrp.com/help/authors",
+      "retrieved": "2026-10-18",
+      "file": "bb39b601ce49.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/",
+      "retrieved": "2026-10-18",
+      "file": "bd54582e606f.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.computer.org/csdl/journal/td/write-for-us/15045",
+      "retrieved": "2026-10-18",
+      "file": "c2149d3a5874.txt",
+      "status": 200,
+      "final_url": "https://www.computer.org/csdl/journal/td/write-for-us/15045",
+      "characters": 28
+    },
+    {
+      "url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
+      "retrieved": "2026-10-18",
+      "file": "c89c2dc4467c.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/author-information/",
+      "retrieved": "2026-10-18",
+      "file": "cb24d7327016.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://dl.acm.org/journal/csur/author-guidelines",
+      "retrieved": "2026-10-18",
+      "file": "d59bd38906b4.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.sigmobile.org/mobisys/2026/submission.html",
+      "retrieved": "2026-10-18",
+      "file": "d5d594fea3ad.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://infocom2026.ieee-infocom.org/authors/call-papers",
+      "retrieved": "2026-10-18",
+      "file": "d5fe9a80b019.txt",
+      "error": "HTTP Error 418: Unknown Code"
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines",
+      "retrieved": "2026-10-18",
+      "file": "d606965f1969.txt",
+      "status": 200,
+      "final_url": "https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines",
+      "characters": 9430
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-twc/author-guidelines",
+      "retrieved": "2026-10-18",
+      "file": "da82cb504e45.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://csur.acm.org/",
+      "retrieved": "2026-10-18",
+      "file": "dba04f706b68.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://docs.openreview.net/getting-started/using-the-openreview.net-interface/submitting-a-paper",
+      "retrieved": "2026-10-18",
+      "file": "dcb85a3d3053.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ieee-iotj.org/",
+      "retrieved": "2026-10-18",
+      "file": "ddb06e7008f6.txt",
+      "status": 200,
+      "final_url": "https://ieee-iotj.org/",
+      "characters": 2430
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines",
+      "retrieved": "2026-10-18",
+      "file": "de35e4bcf413.txt",
+      "status": 200,
+      "final_url": "https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines",
+      "characters": 51460
+    },
+    {
+      "url": "https://www.computer.org/csdl/journal/tn/write-for-us/15045",
+      "retrieved": "2026-10-18",
+      "file": "e54e6c562083.txt",
+      "status": 200,
+      "final_url": "https://www.computer.org/csdl/journal/tn/write-for-us/15045",
+      "characters": 28
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines",
+      "retrieved": "2026-10-18",
+      "file": "e67ad9180855.txt",
+      "status": 200,
+      "final_url": "https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines",
+      "characters": 33613
+    },
+    {
+      "url": "https://www.ieee-its.org/pub/t-its/author-information/",
+      "retrieved": "2026-10-18",
+      "file": "e7741be96a24.txt",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
+    },
+    {
+      "url": "https://dl.acm.org/journal/tist/author-guidelines",
+      "retrieved": "2026-10-18",
+      "file": "f062e10208ac.txt",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.sigmobile.org/mobicom/2026/cfp.html",
+      "retrieved": "2026-10-18",
+      "file": "f5ea79a0e27d.txt",
+      "status": 200,
+      "final_url": "https://www.sigmobile.org/mobicom/2026/cfp.html",
+      "characters": 25225
+    },
+    {
+      "url": "https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions",
+      "retrieved": "2026-10-18",
+      "file": "f76c3a276796.txt",
+      "status": 200,
+      "final_url": "https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions",
+      "characters": 5435
+    },
+    {
+      "url": "https://media.neurips.cc/Conferences/NeurIPS2025/Styles.zip",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "file": "31b03e8f26e9.zip",
+      "members": [
+        "Styles/neurips_2025.sty",
+        "Styles/neurips_2025.tex",
+        "Styles/neurips_2025.pdf"
+      ]
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html",
+      "file": "/tmp/ieee-evidence/t_auth_article-type.html",
+      "bytes": 24631,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+      "file": "/tmp/ieee-evidence/t_auth_upload-manuscript.html",
+      "bytes": 35271,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html",
+      "file": "/tmp/ieee-evidence/t_auth_upload-latex.html",
+      "bytes": 32117,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_title.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_title.html",
+      "file": "/tmp/ieee-evidence/t_auth_title.html",
+      "bytes": 23129,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_abstract.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_abstract.html",
+      "file": "/tmp/ieee-evidence/t_auth_abstract.html",
+      "bytes": 23268,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_authors.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_authors.html",
+      "file": "/tmp/ieee-evidence/t_auth_authors.html",
+      "bytes": 22563,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_affiliations.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_affiliations.html",
+      "file": "/tmp/ieee-evidence/t_auth_affiliations.html",
+      "bytes": 26787,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_author-details.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_author-details.html",
+      "file": "/tmp/ieee-evidence/t_auth_author-details.html",
+      "bytes": 34514,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_match-organizations.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_match-organizations.html",
+      "file": "/tmp/ieee-evidence/t_auth_match-organizations.html",
+      "bytes": 28631,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_additional-information.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_additional-information.html",
+      "file": "/tmp/ieee-evidence/t_auth_additional-information.html",
+      "bytes": 24011,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_final-review.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_final-review.html",
+      "file": "/tmp/ieee-evidence/t_auth_final-review.html",
+      "bytes": 32823,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_start-new-submission.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_start-new-submission.html",
+      "file": "/tmp/ieee-evidence/t_auth_start-new-submission.html",
+      "bytes": 23935,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf",
+      "file": "/tmp/ieee-evidence/IEEE-Editorial-Style-Manual-for-Authors.pdf",
+      "bytes": 809723,
+      "note": "Inspected public source; blocked pages provide no journal rules."
+    },
+    {
+      "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://docs.google.com/document/d/1j1L96U2NagwWI9MEVDNVKt9pXxRzTH7h3krI3Mb6wZE/edit?usp=sharing",
+      "file": "/tmp/ieee-evidence/IEEE_Reference_Guide.pdf",
+      "bytes": 2719248,
+      "note": "Redirected to Google Docs HTML; not used as PDF evidence."
+    },
+    {
+      "url": "https://ctan.org/pkg/ieeetran",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://ctan.org/pkg/ieeetran",
+      "file": "/tmp/ieee-evidence/ieeetran",
+      "bytes": 16385,
+      "note": "Inspected public source; blocked pages provide no journal rules."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/author-information/",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "final_url": "https://ieee-itss.org/pub/t-its/author-information/",
+      "file": "/tmp/ieee-evidence/tits.html",
+      "bytes": 5492,
+      "note": "Inspected public source; blocked pages provide no journal rules."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/",
+      "retrieved": "2026-10-18",
+      "file": "/workspace/its.html",
+      "status": "prefetched",
+      "note": "Pre-existing public homepage HTML with canonical URL and literal https://ieee.atyponrex.com/journal/t-its link. Fresh fetch 403; used for portal mapping only."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-main.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/?paperpush=1",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-query.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://www.ieee-itss.org/pub/t-its/",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-www.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-noslash.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/paper-submission/",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-submission.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_article-type.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_article-type.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_upload-manuscript.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_upload-manuscript.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_upload-latex.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_upload-latex.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_title.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_title.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_abstract.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_abstract.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_authors.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_authors.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_affiliations.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_affiliations.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_author-details.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_author-details.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_match-organizations.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_match-organizations.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_additional-information.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_additional-information.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_final-review.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_final-review.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_start-new-submission.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_start-new-submission.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "file": "/tmp/ieee-evidence/index.html",
+      "note": "Help index used to discover step pages."
+    },
+    {
+      "url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/",
+      "retrieved": "2026-10-18",
+      "status": "prefetched",
+      "file": "/workspace/codexrun/ieee_sources/README.md",
+      "note": "User-supplied verbatim public IEEE Author Center excerpt: use the interactive IEEE Template Selector. IEEEtran name independently verified from CTAN; no PDF geometry inferred."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/",
+      "retrieved": "2026-10-18",
+      "status": "verified-user-provided",
+      "page_timestamp": "2026-07-15",
+      "provided_by": "Neil",
+      "reference_commit": "7fe8d5f96d2f6517ee00c2feca6d609d7025cd41",
+      "note": "Verified journal requirements and portal provided by Neil and preserved in commit 7fe8d5f. Restored within IEEE inheritance: article types and main-text caps, IEEEtran, abstract limits, keyword categories, single-anonymous review, resubmission cover letter and accepted final files. Earlier curl failures do not invalidate this verified evidence."
+    }
+  ],
+  "new_entries": [
+    "ieee_tmc",
+    "ieee_tpds",
+    "ieee_tits",
+    "acm_tosn",
+    "acm_csur",
+    "acm_tist",
+    "ieee_tvt",
+    "ieee_twc",
+    "ieee_tnse",
+    "ieee_iot",
+    "ieee_jsac",
+    "infocom_2026",
+    "mobicom_2026_summer",
+    "mobicom_2026_winter",
+    "mobisys_2026",
+    "sensys_2026_nov",
+    "neurips_2025"
+  ],
+  "evidence": [
+    {
+      "url": "https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        "al IEEE typesetting. Starting January 20th, 2020, initial (new) submissions must have a maximum page length of 14 pages for regular papers and 5 pages for correspondence, while final submissions / revised submissions have maximum page length of 16 pages for regular pap",
+        "pages for correspondence papers! Please note that both references and biographies are included into these limits. Additionally, the title should be single-columned. All submissions must follow these guidelines! A",
+        "idths as much as 4:1 reduction from the original. Materials should be no larger than 22 x 28 cm (8 1/2 x 11inches). Do not incorporate electronic graphics into the paper. Graphs should be drawn w",
+        "reader is conveniently led to other related work. Papers without references will normally be returned for correction prior to submission to the reviewers. 4. Please note that papers not relevant to the core topics of"
+      ]
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        "bmissions of revised manuscripts (e.g., .R1, R2). Transactions papers may not exceed 13 double-column single-spaced pages (10-point font size) including the title, names of the authors and their complete contact informati",
+        "ollow the instructions for the template you need. The revised manuscripts may not exceed 16 double-column single-spaced pages (10-point font size) including the title, names of the authors an",
+        ".  The title should be descriptive and specific.  The abstract should be 75 to 200 words and concisely summarize the contribution of the paper.  The introduction shall motivate the contrib"
+      ]
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        "elines Submit a Manuscript Page Limit and Charges A submission to IEEE TNSE is limited to 18 pages. The authors can choose to submit Appendix as part of the main paper. After a manuscript has been a",
+        "ssential that each manuscript be accompanied by a 75- to 200-word abstract clearly outlining the scope and contributions of the paper and a list of up to five keywords should",
+        "ning the scope and contributions of the paper and a list of up to five keywords should be included on the manuscript. Due to the inter-/cross-disciplinary nature of the IEEE TNSE,",
+        "science and engineering. For example, a dedicated section on \"Related Work\" should be included with an extensive list of references reviewed. A comparison table among related "
+      ]
+    },
+    {
+      "url": "https://ieee-iotj.org/guidelines-for-authors/",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        " Center (see https://ieeeauthorcenter.ieee.org/). The abstract must be between 150 and 250 words. Be sure that you adhere to these limits, otherwise you will need to edit your abstract accordingly",
+        "by a minimum of two independent reviewers using a single-anonymous review process, where the identities of the reviewers are not known to the authors, but the reviewers know the ide",
+        "are required to prepare manuscripts employing the double-column style template developed by IEEE. More general information on article templates, as well as instructions on how to prepare your pape"
+      ]
+    },
+    {
+      "url": "https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        "-column IEEE format. In single-column format, the manuscript must not exceed 30 double-spaced pages in 12-point font, with approximately 26 lines per page and 6.5-inch line length, inclusive of figures and tables. To",
+        "umn (2-column), IEEE format (10-point font size), using the IEEE style files: http:/www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/ . (Though this application allows you",
+        "$220 per page applied. Please note that sometimes Guest Editors will impose a maximum allowable page length to accepted papers for their issue. Maximum allowable page length IS NOT the same as overlength pag"
+      ]
+    },
+    {
+      "url": "https://www.sigmobile.org/mobicom/2026/cfp.html",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        "g guidelines may be immediately rejected: Contain no more than twelve (12) single-spaced and numbered pages, including figures, tables, and any other material, followed by as many pages as necessary for bibl",
+        "ges will not be reviewed. Submissions may include appendices (following bibliography references) and they will not count towards the 12 pages. However, reviewers are not required to read appendice",
+        " must contain a meaningful title and a meaningful abstract of at least 100 words which will reasonably correspond to the final version of the title and the abstract. Abstracts and/",
+        "rlinks, as these may compromise author anonymity. Limit the file size to less than 15 MB: contact the PC chairs if you have a file larger than this limit. You may find these templates usef"
+      ]
+    },
+    {
+      "url": "https://www.sigmobile.org/mobisys/2026/call_for_papers/",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        " are once again revising our paper review policy. Starting in 2026, MobiSys will revert to a single-blind review process. Consequently, authors are now required to include their names, affiliations, and contact informati",
+        "r the main content, including figures and tables. Authors may provide additional appendix and reference sections without page limits. The appendix and references will not count toward the 12-page limit, but reviewers are not require",
+        "lowing guidelines may be rejected without review: Papers must not exceed twelve (12) single-spaced, numbered pages for the main content, including figures and tables. Authors may provi"
+      ]
+    },
+    {
+      "url": "https://sensys.acm.org/2026/cfp.html",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        "inal, unpublished work not under review elsewhere Full papers : ≤12 pages; Short papers (Experiences only) : ≤6 pages. References are excluded from the page limit for both full and short papers. No appendices are allo",
+        "ages; Short papers (Experiences only) : ≤6 pages. References are excluded from the page limit for both full and short papers. No appendices are allowed (except for resubmission from the first d",
+        "lind review : follow the Anonymity Policy (below) Ethical statement required for research with human participants (use generic, non-identifying wording during review) Registration & attendance : For each accepted ",
+        "om the page limit for both full and short papers. No appendices are allowed (except for resubmission from the first deadline, which are allowed to have an appendix), submissio"
+      ]
+    },
+    {
+      "url": "https://neurips.cc/Conferences/2025/CallForPapers",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        "n deadline. The main text of a submitted paper is limited to nine content pages , including all figures and tables. Additional pages containing references, checklist, and the opti",
+        "al content page for the camera-ready version. The maximum file size for a main paper submission is 50MB. You must format your submission using the NeurIPS 2025 LaTeX style file , which includes a \"prepri",
+        " are required to complete a paper checklist . The paper checklist is intended to help authors reflect on a wide variety of issues relating to responsible machine learning resear",
+        "retion of the reviewers. Authors may submit up to 100MB of technical appendices and supplementary material. Use of Large Language Models (LLMs) The NeurIPS policy for use of Large Language Models (LLMs) can"
+      ]
+    },
+    {
+      "url": "https://aaai.org/conference/aaai/aaai-27/submission-instructions/",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        "formation, such as paper number and keywords. The main submission PDF can have up to 9 pages, with pages 8–9 reserved exclusively for references. That is, the main paper can have up to 7 pages",
+        "reserved exclusively for references. That is, the main paper can have up to 7 pages of non-references content. Acknowledgements should be omitted from papers submitted for review, and",
+        "e results in the submission can be reproduced and must be uploaded separately from the main paper in the designated field of the submission form. The completed checklist will be made available to r"
+      ]
+    },
+    {
+      "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "retrieved": "2026-10-18",
+      "excerpts": [
+        "(all times are UTC-12h, aka “Anywhere on Earth”): Abstract deadline Sep 18, 2026 AOE Paper deadline Sep 25, 2026 AOE Reviews released Nov 05, 2026 Author-reviewer discussion Nov 05, 2026–Nov 18, 2026 Reviewer-AC disc",
+        "eneral machine learning (i.e., none of the above) Submissions will be double blind: reviewers cannot see author names when conducting reviews, and authors cannot see reviewer names. "
+      ]
+    }
+  ]
+}

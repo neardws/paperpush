@@ -69,6 +69,12 @@ python scripts/gen_readme_venues.py
 
 ## Manuscript requirements
 
+CS journal and conference configurations, per-edition updates, source auditing,
+and the fixture-only portal-driver contract are documented in
+[docs/cs-venues.md](docs/cs-venues.md). New venue metadata (`platform`, `edition`,
+`source_urls`, `unverified`, `portal_fields`) is exposed through CLI schema and
+MCP descriptions. The new input-only drivers do not automate wizard navigation.
+
 `paperpush/manuscript_requirements.json` records, per venue slug, what the
 venue's author guidelines require of the manuscript itself. `paperpush validate`
 measures the files a `.sub` names against it (`paperpush/requirements_check.py`),
@@ -307,3 +313,17 @@ run — CI fails if `venues.md` is out of sync with that file.
 To deprecate a venue, add the field `deprecated:true` to its entry in `paperpush/venues.json`.
 
 Every venue also declares `anonymous` (`true` for double-blind review, `false` otherwise; an entry without it counts as `false`). An anonymous venue gets the identifying-information check (`paperpush/anonymity.py`) on every `paperpush validate`: the attachments and any linked anonymous.4open.science repositories are searched for the authors' details. Set it for a new venue from its reviewing policy.
+
+## IEEE journals through Author Portal
+
+An arbitrary IEEE Author Portal target needs no new entry: use `ieee:<journal-code>`
+from its public submission link (see [IEEE workflow and examples](docs/cs-venues.md#any-ieee-author-portal-journal)).
+To add sourced journal-specific rules, inherit `ieee` in both databases, keep
+only the journal's field overrides and independently sourced limits, and record
+the public URL verifying its portal code. Use a thin `RexVenue` binding under
+`paperpush/venues/rex/`; shared fields and generic style guidance belong to the
+base, never guessed per-journal limits. Preserve existing slugs. A different
+submission platform keeps its own runner and portal metadata; IEEE style
+inheritance alone does not prove it uses ReX. Run fixture tests and generators;
+these changes were not tested against a live portal. Wizard navigation and all
+confirmation/save/submit actions remain manual.

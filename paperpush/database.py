@@ -15,7 +15,7 @@ from __future__ import annotations
 import copy
 import json
 import logging
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from dataclasses import field as dataclass_field
 from functools import lru_cache
 from pathlib import Path
@@ -394,6 +394,11 @@ class Venue:
     site_url: Annotated[str, PField(description="Public homepage URL.")] = ""
     submission_guide: Annotated[str, PField(description="URL of the author/submission guide.")] = ""
     description: Annotated[str, PField(description="Short description of the venue.")] = ""
+    platform: Annotated[str, PField(description="Reusable portal driver (scholarone, hotcrp, edas, cmt, openreview, easychair), when configured.")] = ""
+    edition: Annotated[dict[str, str], PField(description="Conference edition metadata: year, cycle, and optional deadline strings with timezone. No implicit latest edition.")] = dataclass_field(default_factory=dict)
+    source_urls: Annotated[list[str], PField(description="Public sources for form fields, reviewing policy, and portal URL.")] = dataclass_field(default_factory=list)
+    unverified: Annotated[list[str], PField(description="Unknown or inaccessible facts; informational, never enforced as requirements.")] = dataclass_field(default_factory=list)
+    portal_fields: Annotated[dict[str, str], PField(description="Optional CSS selectors overriding platform field bindings. These select inputs only; never actions.")] = dataclass_field(default_factory=dict)
     # Labels offered by a portal's per-file "file type" dropdown on its upload
     # step (e.g. ScholarOne's "Main Document", "Figure", ...). Venue-level
     # rather than per-field because the same dropdown applies to every file the
@@ -456,6 +461,11 @@ class Venue:
             site_url=data.get("site_url", ""),
             submission_guide=data.get("submission_guide", ""),
             description=data.get("description", ""),
+            platform=data.get("platform", ""),
+            edition=dict(data.get("edition", {})),
+            source_urls=list(data.get("source_urls", [])),
+            unverified=list(data.get("unverified", [])),
+            portal_fields=dict(data.get("portal_fields", {})),
             file_type_options=data.get("file_type_options"),
             max_upload_mb=data.get("max_upload_mb"),
             fields=[Field.from_dict(f) for f in data.get("fields", [])],
@@ -703,6 +713,15 @@ def get_venue(slug: str) -> Venue:
     """
     raw = _load_raw()
     key = slug.lower()
+    if key.startswith("ieee:"):
+        from .ieee import journal_code, portal_url
+
+        code = journal_code(key)
+        url = portal_url(code)
+        # A known code retains the journal's sourced rules, including limits.
+        profile = next((k for k, v in raw.items() if v.get("platform") == "rex" and v.get("submission_url") == url), "ieee")
+        base = get_venue(profile)
+        return replace(base, slug=key, inherits=profile, submission_url=url, name=base.name if profile != "ieee" else f"IEEE journal ({code})")
     for candidate, data in raw.items():
         if candidate.lower() == key or data.get("name", "").lower() == key:
             logger.debug("Resolved venue %r to %r", slug, candidate)

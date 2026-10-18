@@ -1,0 +1,28 @@
+# paperpush submission file for acm_tist  -*- mode: yaml -*-
+# ACM Transactions on Intelligent Systems and Technology
+#
+# Edit the values below, then run:  paperpush submit acm_tist.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: acm_tist
+# submission guide: https://dl.acm.org/journal/tist/author-guidelines
+
+# Title (text, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://dl.acm.org/journal/tist/author-guidelines. 
+title: 
+
+# Abstract (textarea, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://dl.acm.org/journal/tist/author-guidelines. 
+abstract: |
+  
+
+# Authors (authorlist, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://dl.acm.org/journal/tist/author-guidelines. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  
+
+# Manuscript (file, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://dl.acm.org/journal/tist/author-guidelines. 
+manuscript_file: 
+
+# vim: set filetype=yaml :

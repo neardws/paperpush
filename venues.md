@@ -1,10 +1,14 @@
 ## Supported venues
 
 <!-- BEGIN SUPPORTED VENUES -->
-_22 supported venues (auto-generated from `paperpush/venues.json`)._
+_42 supported venues (auto-generated from `paperpush/venues.json`)._
 
 | Slug | Venue | Venue type | Submission platform | Description | Submit walkthrough |
 | --- | --- | --- | --- | --- | --- |
+| `aaai_2027` | [AAAI 2027](https://aaai.org/conference/aaai/aaai-27/) | Conference | OpenReview | Promote research in Artificial Intelligence (AI) and foster scientific exchange between researchers, practitioners, scientists, students, and engineers across the entirety of AI and its affiliated disciplines. | ✅ 2026-09-01 |
+| `acm_csur` | [ACM Computing Surveys](https://dl.acm.org/journal/csur) | Journal | ScholarOne Manuscripts | Preparation and validation only; portal URL unverified. Platform assignment is provisional. | ❌ |
+| `acm_tist` | [ACM Transactions on Intelligent Systems and Technology](https://dl.acm.org/journal/tist) | Journal | ScholarOne Manuscripts | Preparation and validation only; portal URL unverified. Platform assignment is provisional. | ❌ |
+| `acm_tosn` | [ACM Transactions on Sensor Networks](https://dl.acm.org/journal/tosn) | Journal | ScholarOne Manuscripts | Preparation and validation only; portal URL unverified. Platform assignment is provisional. | ❌ |
 | `arxiv` | [arXiv](https://arxiv.org) | Preprint | arXiv (native) | Free distribution service and open-access archive for preprints in physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, and more. | ✅ 2026-09-01 |
 | `bioinformatics` | [Bioinformatics](https://academic.oup.com/bioinformatics) | Journal | ScholarOne Manuscripts | Computational molecular biology covering new algorithms, software, databases, and analyses of biological data. | ✅ 2026-09-01 |
 | `biorxiv` | [bioRxiv](https://www.biorxiv.org) | Preprint | openRxiv | Free online archive and distribution service for unpublished preprints in the life sciences. | ✅ 2026-09-01 |
@@ -15,10 +19,25 @@ _22 supported venues (auto-generated from `paperpush/venues.json`)._
 | `combinatorica` | [Combinatorica](https://link.springer.com/journal/493) | Journal | EditFlow | International journal publishing research in combinatorics and the theory of computing, including combinatorial structures, optimization, algorithms, complexity, geometry, and number theory. | ✅ 2026-09-01 |
 | `discrete_mathematics` | [Discrete Mathematics](https://www.sciencedirect.com/journal/discrete-mathematics) | Journal | Editorial Manager | Elsevier journal publishing original research and survey articles across combinatorics, graph theory, and the broader field of discrete mathematics. | ✅ 2026-09-01 |
 | `genome_biology` | [Genome Biology](https://genomebiology.biomedcentral.com) | Journal | Springer Nature Snapp | Open-access journal publishing peer-reviewed research and methods across all areas of biology and biomedicine studied from a genomic and post-genomic perspective. | ✅ 2026-09-01 |
+| `iclr_2027` | [ICLR 2027](https://iclr.cc/Conferences/2027) | Conference | OpenReview | Conference on representation learning, deep learning, and their applications, covering machine learning theory, methods, and practice. | ✅ 2026-09-01 |
+| `ieee` | [IEEE Author Portal (generic base)](https://journals.ieeeauthorcenter.ieee.org/) | Journal | IEEE Author Portal / ReX | Use ieee:<journal-code> for any IEEE Author Portal journal; generic checks only unless a sourced profile exists. | ❌ |
+| `ieee_iot` | [IEEE Internet of Things Journal](https://ieee-iotj.org/) | Journal | IEEE Author Portal / ReX | Attended form filling; fixture-tested only. | ❌ |
+| `ieee_jsac` | [IEEE Journal on Selected Areas in Communications](https://www.comsoc.org/publications/journals/ieee-jsac) | Journal | IEEE Author Portal / ReX | Preparation and validation; IEEE Author Portal URL unverified. | ❌ |
+| `ieee_tits` | [IEEE Transactions on Intelligent Transportation Systems](https://ieee-itss.org/pub/t-its/) | Journal | IEEE Author Portal / ReX | Attended form filling; fixture-tested only. | ❌ |
+| `ieee_tmc` | [IEEE Transactions on Mobile Computing](https://www.computer.org/csdl/journal/tm) | Journal | IEEE Author Portal / ReX | Preparation and validation only; IEEE Author Portal URL unverified. | ❌ |
+| `ieee_tnse` | [IEEE Transactions on Network Science and Engineering](https://www.comsoc.org/publications/journals/ieee-tnse) | Journal | IEEE Author Portal / ReX | Attended form filling; fixture-tested only. | ❌ |
+| `ieee_tpds` | [IEEE Transactions on Parallel and Distributed Systems](https://www.computer.org/csdl/journal/td) | Journal | IEEE Author Portal / ReX | Preparation and validation only; IEEE Author Portal URL unverified. | ❌ |
+| `ieee_tvt` | [IEEE Transactions on Vehicular Technology](https://vtsociety.org/publication/ieee-transactions-vehicular-technology) | Journal | IEEE Author Portal / ReX | Preparation and validation; IEEE Author Portal URL unverified. | ❌ |
+| `ieee_twc` | [IEEE Transactions on Wireless Communications](https://www.comsoc.org/publications/journals/ieee-twc) | Journal | IEEE Author Portal / ReX | Attended form filling; fixture-tested only. | ❌ |
+| `infocom_2026` | [IEEE INFOCOM 2026](https://infocom2026.ieee-infocom.org/) | Conference | EDAS | Preparation and validation only; portal URL unverified. Platform assignment is provisional. | ❌ |
 | `medrxiv` | [medRxiv](https://www.medrxiv.org) | Preprint | openRxiv | Free online archive and distribution server for complete but unpublished manuscripts (preprints) in the medical, clinical, and related health sciences. | ✅ 2026-09-01 |
+| `mobicom_2026_summer` | [ACM MobiCom 2026 (summer)](https://www.sigmobile.org/mobicom/2026/) | Conference | HotCRP | Attended form filling; fixture-tested only. | ❌ |
+| `mobicom_2026_winter` | [ACM MobiCom 2026 (winter)](https://www.sigmobile.org/mobicom/2026/) | Conference | HotCRP | Attended form filling; fixture-tested only. | ❌ |
+| `mobisys_2026` | [ACM MobiSys 2026](https://www.sigmobile.org/mobisys/2026/) | Conference | HotCRP | Attended form filling; fixture-tested only. | ❌ |
 | `nature` | [Nature](https://www.nature.com) | Journal | eJournalPress | Weekly multidisciplinary journal publishing peer-reviewed research of outstanding significance across all fields of science and technology, alongside news and commentary. | ✅ 2026-09-01 |
 | `nature_biotech` | [Nature Biotechnology](https://www.nature.com/nbt) | Journal | eJournalPress | Publishes peer-reviewed research and analysis on the science and business of biotechnology, covering the application of biological systems to therapeutics, diagnostics, agriculture, and related areas. | ✅ 2026-09-01 |
 | `nature_methods` | [Nature Methods](https://www.nature.com/nmeth) | Journal | eJournalPress | Publishes peer-reviewed novel methods and significant improvements to techniques across the life sciences, including their development, validation, and application. | ✅ 2026-09-01 |
+| `neurips_2025` | [NeurIPS 2025](https://neurips.cc/Conferences/2025) | Conference | OpenReview | Attended form filling; fixture-tested only. | ❌ |
 | `nucleic_acids_research` | [Nucleic Acids Research](https://academic.oup.com/nar) | Journal | ScholarOne Manuscripts | Leading research in nucleic acids, including their chemistry, biology, and applications, and computational and structural studies of nucleic acids and their interactions. | ✅ 2026-09-01 |
 | `plos_compbio` | [PLOS Computational Biology](https://journal.plos.org/ploscompbiol/) | Journal | Editorial Manager | Open-access journal publishing research that applies computational methods to understand living systems across all scales, from molecules to ecosystems. | ✅ 2026-09-01 |
 | `science` | [Science](https://www.science.org/journal/science) | Journal | AAAS Contributor Tracking System | Peer-reviewed flagship journal of the American Association for the Advancement of Science (AAAS), publishing significant original research across all scientific disciplines along with news and commentary. | ✅ 2026-09-01 |
@@ -27,4 +46,5 @@ _22 supported venues (auto-generated from `paperpush/venues.json`)._
 | `science_robotics` | [Science Robotics](https://www.science.org/journal/scirobotics) | Journal | AAAS Contributor Tracking System | AAAS journal publishing peer-reviewed original research on advances in robotics and related disciplines, including robot design, control, autonomy, and applications. | ✅ 2026-09-01 |
 | `science_signaling` | [Science Signaling](https://www.science.org/journal/signaling) | Journal | AAAS Contributor Tracking System | AAAS journal publishing peer-reviewed original research on cellular signaling and regulatory networks, including signal transduction, systems biology, and relevance to disease. | ✅ 2026-09-01 |
 | `science_translational_medicine` | [Science Translational Medicine](https://www.science.org/journal/stm) | Journal | AAAS Contributor Tracking System | AAAS journal publishing peer-reviewed original research that bridges basic science and clinical medicine to advance human health. | ✅ 2026-09-01 |
+| `sensys_2026_nov` | [ACM SenSys 2026 (November cycle)](https://sensys.acm.org/2026/) | Conference | HotCRP | Attended form filling; fixture-tested only. | ❌ |
 <!-- END SUPPORTED VENUES -->

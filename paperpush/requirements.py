@@ -33,7 +33,7 @@ from __future__ import annotations
 import copy
 import json
 import logging
-from dataclasses import dataclass, fields as dataclass_fields
+from dataclasses import dataclass, replace, fields as dataclass_fields
 from dataclasses import field as dataclass_field
 from functools import lru_cache
 from pathlib import Path
@@ -159,6 +159,9 @@ class ManuscriptRules:
     template_required: Annotated[Optional[bool], PField(description="Must use the venue's style file or template.")] = None
     template_url: Annotated[Optional[str], PField(description="URL of the venue's template.")] = None
     latex_class: Annotated[Optional[str], PField(description="Required LaTeX document class or style file.")] = None
+    recommended_latex_class: Annotated[Optional[str], PField(description="Recommended LaTeX class; source detection warns and never proves PDF conformance.")] = None
+    latex_options: Annotated[Optional[list[str]], PField(description="Required LaTeX class/package options, when explicitly mandated by the source.")] = None
+    allow_appendix: Annotated[Optional[bool], PField(description="Whether appendices are allowed in the submitted manuscript. None means unspecified.")] = None
     template_layout: Annotated[Optional[TemplateLayout], PField(description="Geometry of the compiled template, checked against the manuscript PDF to catch shrunken margins, font, or line spacing.")] = None
     language: Annotated[Optional[str], PField(description="Mandated language variant, if any.")] = None
     notes: Annotated[list[str], PField(description="Rules with no structured key, one per string.")] = _notes()
@@ -182,6 +185,9 @@ class AbstractRules:
 
     max_words: Annotated[Optional[int], PField(description="Maximum abstract length in words.")] = None
     min_words: Annotated[Optional[int], PField(description="Minimum abstract length in words.")] = None
+    min_words_enforced: Annotated[Optional[bool], PField(description="Report an abstract below min_words as an error when the journal explicitly enforces the lower bound; otherwise warn.")] = None
+    recommended_min_words: Annotated[Optional[int], PField(description="Advisory abstract minimum; used only without journal-specific word limits.")] = None
+    recommended_max_words: Annotated[Optional[int], PField(description="Advisory abstract maximum; used only without journal-specific word limits.")] = None
     max_characters: Annotated[Optional[int], PField(description="Maximum abstract length in characters.")] = None
     structured: Annotated[Optional[bool], PField(description="Abstract must be structured into labelled subsections.")] = None
     structured_headings: Annotated[Optional[list[str]], PField(description="The subsection labels a structured abstract must carry.")] = None
@@ -216,6 +222,7 @@ class StatementRules:
 
     required: Annotated[Optional[list[StatementId]], PField(description="Canonical ids of the declarations the manuscript must contain (matched via $aliases).")] = None
     optional: Annotated[Optional[list[StatementId]], PField(description="Declarations the venue accepts but does not require.")] = None
+    required_if: Annotated[dict[str, str], PField(description="Statement id to boolean .sub field; required only when the field is explicitly yes.")] = dataclass_field(default_factory=dict)
     notes: Annotated[list[str], PField(description="Rules with no structured key.")] = _notes()
 
 
@@ -670,6 +677,16 @@ def get_requirements(slug: str) -> Optional[ManuscriptRequirements]:
     """
     raw = _load_raw()
     key = slug.lower()
+    if key.startswith("ieee:"):
+        from .database import get_venue
+
+        profile = get_venue(key).inherits
+        base = get_requirements(profile)
+        if base is None:
+            return None
+        from .ieee import GENERIC_NOTICE
+
+        return replace(base, slug=key, inherits=profile, notes=base.notes + ([GENERIC_NOTICE] if profile == "ieee" else []))
     for candidate in raw:
         if candidate.startswith("$"):
             continue

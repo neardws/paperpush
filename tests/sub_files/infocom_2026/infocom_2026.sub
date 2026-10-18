@@ -1,0 +1,28 @@
+# paperpush submission file for infocom_2026  -*- mode: yaml -*-
+# IEEE INFOCOM 2026
+#
+# Edit the values below, then run:  paperpush submit infocom_2026.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: infocom_2026
+# submission guide: https://infocom2026.ieee-infocom.org/authors/call-papers
+
+# Title (text, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://edas.info/doc/authors.html. 
+title: An edge intelligence system
+
+# Abstract (textarea, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://edas.info/doc/authors.html. 
+abstract: |
+  research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research
+
+# Authors (authorlist, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://edas.info/doc/authors.html. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  Ada Example | ada@example.edu | Example University |  | yes
+
+# Manuscript (file, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://edas.info/doc/authors.html. 
+manuscript_file: tests/manuscript_files/infocom_2026/manuscript.pdf
+
+# vim: set filetype=yaml :

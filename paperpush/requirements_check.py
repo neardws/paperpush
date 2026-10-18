@@ -48,7 +48,7 @@ from pathlib import Path
 
 from .database import Field, Venue
 from .manuscript import headings as manuscript_headings
-from .manuscript import normalize_heading, pages_before_references, reference_count, title_page_text, total_pages, total_words, words_before_references
+from .manuscript import manuscript_text, normalize_heading, pages_before_references, reference_count, title_page_text, total_pages, total_words, words_before_references
 from .requirements import FigureRules, ManuscriptRequirements, get_requirements, heading_aliases, resolve
 from .validate import BYTES_PER_MB, ERROR, WARNING, Issue
 
@@ -232,11 +232,14 @@ def _length_issues(field: Field, path: Path, reqs: ManuscriptRequirements) -> li
     return issues
 
 
-def _heading_issues(field: Field, path: Path, reqs: ManuscriptRequirements) -> list[Issue]:
+def _heading_issues(field: Field, path: Path, reqs: ManuscriptRequirements, values: dict | None = None) -> list[Issue]:
     """WARN on a required section or declaration whose heading is not found."""
     required_sections = list(reqs.sections.required or [])
     required_statements = list(reqs.statements.required or [])
-    if not required_sections and not required_statements:
+    for statement, trigger in reqs.statements.required_if.items():
+        if str((values or {}).get(trigger, "")).strip().lower() == "yes":
+            required_statements.append(statement)
+    if not required_sections and not required_statements and reqs.manuscript.allow_appendix is not False:
         return []
     found = manuscript_headings(path)
     if found is None:
@@ -245,6 +248,8 @@ def _heading_issues(field: Field, path: Path, reqs: ManuscriptRequirements) -> l
     # A single combined heading ("Results and Discussion") satisfies each part.
     combined = {normalize_heading(c) for c in (reqs.sections.combined_allowed or [])}
     issues: list[Issue] = []
+    if reqs.manuscript.allow_appendix is False and any(re.search(r"\bappendi(?:x|ces)\b", heading, re.I) for heading in found):
+        issues.append(Issue(WARNING, field.id, "appendix: the selected submission type does not allow appendices; confirm the detected appendix heading"))
 
     def _has(canonical: str, aliases: dict[str, list[str]]) -> bool:
         wordings = set(aliases.get(canonical, [canonical.lower()]))
@@ -307,6 +312,21 @@ def _reference_issues(field: Field, path: Path, reqs: ManuscriptRequirements) ->
     return []
 
 
+def _reference_style_issues(field: Field, path: Path, reqs: ManuscriptRequirements) -> list[Issue]:
+    """Advisory IEEE style evidence, never proof that all citations are correct."""
+    if reqs.references.style != "IEEE" or not reqs.references.numbered:
+        return []
+    text = manuscript_text(path)
+    if not text:
+        return [Issue(WARNING, field.id, f"IEEE references: could not read {path.name}; numbered square-bracket citations were not checked")]
+    # Test the body separately: bracketed bibliography labels alone do not
+    # establish the in-text citation style. Ignore numeric equation labels.
+    body = re.split(r"(?im)^\s*(?:[IVX]+[. ]+)?references\s*$", text, maxsplit=1)[0]
+    if not re.search(r"\[\s*\d+(?:\s*[,–-]\s*\d+)*\s*\]", body):
+        return [Issue(WARNING, field.id, f"IEEE references: no numbered square-bracket citations detected in the body of {path.name}; confirm IEEE reference style manually")]
+    return []
+
+
 # --- .sub text fields --------------------------------------------------------
 
 
@@ -324,10 +344,13 @@ def _text_field_issues(venue: Venue, reqs: ManuscriptRequirements, values: dict[
             continue
         rules = reqs.abstract
         words = len(raw.split())
+        if rules.min_words is None and rules.max_words is None and field.word_count is None:
+            if (rules.recommended_min_words is not None and words < rules.recommended_min_words) or (rules.recommended_max_words is not None and words > rules.recommended_max_words):
+                issues.append(Issue(WARNING, field.id, f"IEEE style guidance: abstract has {words} words; recommended range is {rules.recommended_min_words}–{rules.recommended_max_words}. Check the journal's own limit."))
         if rules.max_words is not None and field.word_count is None and words > rules.max_words:
             issues.append(Issue(ERROR, field.id, f"{field.label}: {words} words exceeds the {rules.max_words}-word limit in the author guidelines"))
         if rules.min_words is not None and words < rules.min_words:
-            issues.append(Issue(WARNING, field.id, f"{field.label}: {words} words is under the {rules.min_words}-word minimum in the author guidelines"))
+            issues.append(Issue(ERROR if rules.min_words_enforced else WARNING, field.id, f"{field.label}: {words} words is under the {rules.min_words}-word minimum in the author guidelines"))
         if rules.max_characters is not None and field.character_count is None and len(raw) > rules.max_characters:
             issues.append(Issue(ERROR, field.id, f"{field.label}: {len(raw)} characters exceeds the {rules.max_characters}-character limit in the author guidelines"))
         if rules.structured and rules.structured_headings:
@@ -465,12 +488,14 @@ def _template_issues(field: Field, path: Path, reqs: ManuscriptRequirements) -> 
 
 def _template_source_issues(venue: Venue, reqs: ManuscriptRequirements, values: dict[str, str]) -> list[Issue]:
     """Report LaTeX source, in any upload, that edits a mandatory template's layout."""
-    if not reqs.manuscript.template_required:
+    expected = reqs.manuscript.latex_class or reqs.manuscript.recommended_latex_class
+    if not reqs.manuscript.template_required and not expected:
         return []
     from . import template_check
 
     issues: list[Issue] = []
     seen: set[Path] = set()
+    main_sources = 0
     for field in venue.fields:
         if field.type not in ("file", "filelist"):
             continue
@@ -479,8 +504,16 @@ def _template_source_issues(venue: Venue, reqs: ManuscriptRequirements, values: 
                 continue
             seen.add(path)
             for where, text in template_check.iter_latex_sources(path):
-                for problem in template_check.source_problems(text):
-                    issues.append(Issue(WARNING, field.id, f"template: {where} {problem}"))
+                if re.search(r"\\documentclass\b", template_check._strip_comments(text)):
+                    main_sources += 1
+                if expected:
+                    for problem in template_check.identity_problems(text, expected, reqs.manuscript.latex_options):
+                        issues.append(Issue(WARNING, field.id, f"template: {where} {problem}"))
+                if reqs.manuscript.template_required:
+                    for problem in template_check.source_problems(text):
+                        issues.append(Issue(WARNING, field.id, f"template: {where} {problem}"))
+    if reqs.manuscript.recommended_latex_class and not main_sources:
+        issues.append(Issue(WARNING, "", f"template: no main LaTeX source found; {expected} detection was not possible. PDF/Word appearance does not prove template conformance; check the journal's template manually."))
     return issues
 
 
@@ -499,6 +532,11 @@ def check_manuscript_requirements(venue: Venue, values: dict[str, str]) -> list[
     logger.info("Checking %s against its manuscript requirements", venue.slug)
     issues: list[Issue] = []
 
+    if venue.slug == "ieee" or (venue.slug.startswith("ieee:") and venue.inherits == "ieee"):
+        from .ieee import GENERIC_NOTICE
+
+        issues.append(Issue(WARNING, "", GENERIC_NOTICE))
+
     issues.extend(_text_field_issues(venue, reqs, values))
 
     manuscript_fields = _fields_for(venue, "manuscript")
@@ -508,9 +546,10 @@ def check_manuscript_requirements(venue: Venue, values: dict[str, str]) -> list[
         issues.extend(_size_issues(field, paths, reqs.manuscript.max_file_size_mb, "manuscript file"))
         for path in paths:
             issues.extend(_length_issues(field, path, reqs))
-            issues.extend(_heading_issues(field, path, reqs))
+            issues.extend(_heading_issues(field, path, reqs, values))
             issues.extend(_title_page_issues(field, path, reqs, values))
             issues.extend(_reference_issues(field, path, reqs))
+            issues.extend(_reference_style_issues(field, path, reqs))
             issues.extend(_template_issues(field, path, reqs))
 
     issues.extend(_template_source_issues(venue, reqs, values))

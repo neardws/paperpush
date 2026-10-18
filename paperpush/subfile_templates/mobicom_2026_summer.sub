@@ -1,0 +1,28 @@
+# paperpush submission file for mobicom_2026_summer  -*- mode: yaml -*-
+# ACM MobiCom 2026 (summer)
+#
+# Edit the values below, then run:  paperpush submit mobicom_2026_summer.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: mobicom_2026_summer
+# submission guide: https://www.sigmobile.org/mobicom/2026/cfp.html
+
+# Title (text, REQUIRED)
+#   Source: https://www.sigmobile.org/mobicom/2026/cfp.html. 
+title: 
+
+# Abstract (textarea, REQUIRED)
+#   Source: https://www.sigmobile.org/mobicom/2026/cfp.html. 
+abstract: |
+  
+
+# Authors (authorlist, REQUIRED)
+#   Source: https://www.sigmobile.org/mobicom/2026/cfp.html. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  
+
+# Manuscript (file, REQUIRED)
+#   Source: https://www.sigmobile.org/mobicom/2026/cfp.html. 
+manuscript_file: 
+
+# vim: set filetype=yaml :

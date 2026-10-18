@@ -647,6 +647,42 @@
           ],
           "description": "Required LaTeX document class or style file."
         },
+        "recommended_latex_class": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Recommended LaTeX class; source detection warns and never proves PDF conformance."
+        },
+        "latex_options": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Required LaTeX class/package options, when explicitly mandated by the source."
+        },
+        "allow_appendix": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Whether appendices are allowed in the submitted manuscript. None means unspecified."
+        },
         "template_layout": {
           "anyOf": [
             {
@@ -810,6 +846,39 @@
             }
           ],
           "description": "Minimum abstract length in words."
+        },
+        "min_words_enforced": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Report an abstract below min_words as an error when the journal explicitly enforces the lower bound; otherwise warn."
+        },
+        "recommended_min_words": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Advisory abstract minimum; used only without journal-specific word limits."
+        },
+        "recommended_max_words": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Advisory abstract maximum; used only without journal-specific word limits."
         },
         "max_characters": {
           "anyOf": [
@@ -1072,6 +1141,20 @@
             }
           ],
           "description": "Declarations the venue accepts but does not require."
+        },
+        "required_if": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Statement id to boolean .sub field; required only when the field is explicitly yes."
         },
         "notes": {
           "anyOf": [

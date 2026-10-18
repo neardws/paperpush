@@ -47,8 +47,7 @@
       "References": [
         "Bibliography",
         "Literature Cited",
-        "Works Cited",
-        "References and Notes"
+        "Works Cited"
       ],
       "Limitations of the study": [
         "Limitations of the Study",
@@ -89,6 +88,13 @@
       ],
       "Main text": [
         "Main"
+      ],
+      "Related Work": [
+        "Related Works"
+      ],
+      "NeurIPS Paper Checklist": [
+        "Paper Checklist",
+        "Checklist"
       ]
     },
     "statements": {
@@ -5228,6 +5234,604 @@
       "Submission portal is EditFlow (https://ef.msp.org/submit/combinatorica), distinct from Springer's standard Editorial Manager / online submission system referenced by other Springer math journals.",
       "Journal is co-published by the Bolyai Society and Springer-Verlag; the paperpush-listed submission_guide URL https://combinatorica.hu/ is the society's own site (not fetched directly), separate from the Springer-hosted pages used for this data.",
       "Style/presentation guidance: clarity is paramount, results should be made accessible to the non-specialist reader, with clear motivation, background, and exact references."
+    ]
+  },
+  "ieee_tmc": {
+    "source_urls": [
+      "https://www.computer.org/csdl/journal/tm/write-for-us/15045"
+    ],
+    "retrieved": "2026-10-18",
+    "notes": [
+      "UNVERIFIED: https://www.computer.org/csdl/journal/tm/write-for-us/15045: guideline fetch blocked or returned an empty shell/404; review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced.",
+      "IEEE journals use IEEE Author Portal (confirmed by the user, 2026-10-18); the journal code is not yet verified, so the portal URL is blank and opening the portal is disabled. Once the code is known, use ieee:<code> or set submission_url to https://ieee.atyponrex.com/journal/<code>."
+    ],
+    "inherits": "ieee"
+  },
+  "ieee_tpds": {
+    "source_urls": [
+      "https://www.computer.org/csdl/journal/td/write-for-us/15045"
+    ],
+    "retrieved": "2026-10-18",
+    "notes": [
+      "UNVERIFIED: https://www.computer.org/csdl/journal/td/write-for-us/15045: guideline fetch blocked or returned an empty shell/404; review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced.",
+      "IEEE journals use IEEE Author Portal (confirmed by the user, 2026-10-18); the journal code is not yet verified, so the portal URL is blank and opening the portal is disabled. Once the code is known, use ieee:<code> or set submission_url to https://ieee.atyponrex.com/journal/<code>."
+    ],
+    "inherits": "ieee"
+  },
+  "ieee_tits": {
+    "source_urls": [
+      "https://ieee-itss.org/pub/t-its/"
+    ],
+    "retrieved": "2026-10-18",
+    "article_type_field": "article_type",
+    "manuscript": {
+      "double_spacing": false,
+      "anonymized": false,
+      "template_required": true,
+      "latex_class": "IEEEtran",
+      "notes": [
+        "IEEE double-column template, single-spaced. Page timestamp of the source: 2026-07-15; where the linked 2010 PDF conflicts, the web page is followed.",
+        "Page caps are the suggested length + 6 extra pages (Regular 16, Short 12, Practitioner 12, Survey 24). Extra pages beyond the suggested length (Regular 10, Short 6, Practitioner 6, Survey 18) carry a $175 per-page overlength charge after acceptance; the schema has no soft limit, so check that manually.",
+        "The source does not say whether references count toward the page length. The cap is enforced on the main text only (max_pages_before_refs), which is never stricter than the journal; confirm whether the whole document must also fit."
+      ],
+      "main_text_end_headings": [
+        "References"
+      ]
+    },
+    "article_types": {
+      "Regular": {
+        "manuscript": {
+          "max_pages_before_refs": 16
+        }
+      },
+      "Short": {
+        "manuscript": {
+          "max_pages_before_refs": 12
+        }
+      },
+      "Practitioner": {
+        "manuscript": {
+          "max_pages_before_refs": 12
+        }
+      },
+      "Survey": {
+        "manuscript": {
+          "max_pages_before_refs": 24
+        }
+      }
+    },
+    "abstract": {
+      "min_words": 150,
+      "max_words": 250,
+      "no_references": true,
+      "no_abbreviations": true,
+      "notes": [
+        "One paragraph; no displayed equations, tables or footnotes."
+      ],
+      "min_words_enforced": true
+    },
+    "keywords": {
+      "max": 6,
+      "notes": [
+        "At most 2 free keywords, 1-2 from the methodology list and 1-2 from the application list (6 in total)."
+      ]
+    },
+    "cover_letter": {
+      "notes": [
+        "Resubmissions of previously rejected manuscripts must state the rejection history and the prior paper ID in the cover letter."
+      ]
+    },
+    "notes": [
+      "Single-anonymous review.",
+      "Final files for accepted papers: PDF plus LaTeX or Word source, original figure files, and author biographies and photos for Regular and Survey papers."
+    ],
+    "inherits": "ieee"
+  },
+  "acm_tosn": {
+    "source_urls": [
+      "https://dl.acm.org/journal/tosn/author-guidelines"
+    ],
+    "retrieved": "2026-10-18",
+    "notes": [
+      "UNVERIFIED: https://dl.acm.org/journal/tosn/author-guidelines: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
+    ]
+  },
+  "acm_csur": {
+    "source_urls": [
+      "https://dl.acm.org/journal/csur/author-guidelines"
+    ],
+    "retrieved": "2026-10-18",
+    "notes": [
+      "UNVERIFIED: https://dl.acm.org/journal/csur/author-guidelines: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
+    ]
+  },
+  "acm_tist": {
+    "source_urls": [
+      "https://dl.acm.org/journal/tist/author-guidelines"
+    ],
+    "retrieved": "2026-10-18",
+    "notes": [
+      "UNVERIFIED: https://dl.acm.org/journal/tist/author-guidelines: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
+    ]
+  },
+  "ieee_tvt": {
+    "source_urls": [
+      "https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions"
+    ],
+    "retrieved": "2026-10-18",
+    "article_type_field": "article_type",
+    "manuscript": {
+      "max_pages": 14,
+      "count_includes": [
+        "references",
+        "biographies"
+      ],
+      "font_size_pt": 10,
+      "notes": [
+        "Initial regular: 14 pages; initial correspondence: 5; revised/final regular: 16; revised/final correspondence: 6. Counts include references and biographies.",
+        "IEEE double-column format required. Title is single-column."
+      ]
+    },
+    "article_types": {
+      "Correspondence (initial)": {
+        "manuscript": {
+          "max_pages": 5
+        }
+      },
+      "Regular (revision)": {
+        "manuscript": {
+          "max_pages": 16
+        }
+      },
+      "Correspondence (revision)": {
+        "manuscript": {
+          "max_pages": 6
+        }
+      }
+    },
+    "figures": {
+      "max_width_mm": 220,
+      "max_height_mm": 280,
+      "notes": [
+        "The guideline gives 22 x 28 cm maximum original artwork; contains legacy print guidance, confirm with editorial office for electronic files."
+      ]
+    },
+    "references": {
+      "notes": [
+        "Papers without references are normally returned for correction."
+      ]
+    },
+    "statements": {
+      "notes": [
+        "Disclose any AI tool use to modify author text in the acknowledgments. AI tools may not generate article content in place of an author."
+      ]
+    },
+    "sections": {
+      "required": [
+        "References"
+      ]
+    },
+    "inherits": "ieee"
+  },
+  "ieee_twc": {
+    "source_urls": [
+      "https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines"
+    ],
+    "retrieved": "2026-10-18",
+    "article_type_field": "article_type",
+    "manuscript": {
+      "max_pages": 13,
+      "count_includes": [
+        "references",
+        "appendices",
+        "figures",
+        "tables",
+        "author contact information"
+      ],
+      "font_size_pt": 10,
+      "figures_placement": "inline",
+      "tables_placement": "inline",
+      "notes": [
+        "Double-column, single-spaced. Official IEEE templates linked from the guideline."
+      ]
+    },
+    "article_types": {
+      "Revision": {
+        "manuscript": {
+          "max_pages": 16
+        }
+      }
+    },
+    "abstract": {
+      "min_words": 75,
+      "max_words": 200
+    },
+    "sections": {
+      "required": [
+        "Introduction",
+        "Conclusions"
+      ]
+    },
+    "inherits": "ieee"
+  },
+  "ieee_tnse": {
+    "source_urls": [
+      "https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "max_pages": 18,
+      "count_includes": [
+        "appendices when part of the main paper"
+      ],
+      "template_required": true,
+      "font_size_pt": 9.5,
+      "notes": [
+        "Standard TNSE templates required; LaTeX preferred over Word. No numeric layout geometry inferred from the page description."
+      ]
+    },
+    "abstract": {
+      "min_words": 75,
+      "max_words": 200
+    },
+    "keywords": {
+      "max": 5
+    },
+    "sections": {
+      "required": [
+        "Introduction",
+        "Related Work"
+      ]
+    },
+    "tables": {
+      "notes": [
+        "Include a comparison table of related work emphasizing differences from the submission."
+      ]
+    },
+    "inherits": "ieee"
+  },
+  "ieee_iot": {
+    "source_urls": [
+      "https://ieee-iotj.org/guidelines-for-authors/"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "template_required": true,
+      "anonymized": false,
+      "notes": [
+        "IEEE double-column template required. Eight published pages is a mandatory-charge threshold, NOT a submission page cap; no maximum page count is imposed here."
+      ]
+    },
+    "abstract": {
+      "min_words": 150,
+      "max_words": 250,
+      "no_references": true,
+      "notes": [
+        "One paragraph; no displayed equations."
+      ]
+    },
+    "title_page": {
+      "notes": [
+        "All authors need ORCID; this is an account/submission requirement, not proof that ORCID must be printed in the manuscript."
+      ]
+    },
+    "inherits": "ieee"
+  },
+  "ieee_jsac": {
+    "source_urls": [
+      "https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "template_required": true,
+      "notes": [
+        "A double-column IEEE-format version is required in addition to a single-column version. Single-column version: at most 30 double-spaced pages, 12-point font. This limit is not applied to the double-column upload.",
+        "Guest editors can set special-issue page caps; no generic journal-wide hard cap is inferred from overlength-charge thresholds."
+      ],
+      "latex_class": "IEEEtran"
+    },
+    "upload": {
+      "notes": [
+        "Upload both single-column and double-column versions as instructed by the selected special issue. The second upload must be mapped manually."
+      ]
+    },
+    "inherits": "ieee",
+    "notes": [
+      "UNVERIFIED: IEEE Author Portal journal code / portal URL for JSAC not verified; left blank. Use ieee:<code> once the code is known."
+    ]
+  },
+  "infocom_2026": {
+    "source_urls": [
+      "https://infocom2026.ieee-infocom.org/authors/call-papers"
+    ],
+    "retrieved": "2026-10-18",
+    "notes": [
+      "UNVERIFIED: https://infocom2026.ieee-infocom.org/authors/call-papers: fetch returned HTTP 418; edition portal, deadlines, page limits, template and anonymous-review policy are unverified. No inferred rules are enforced."
+    ]
+  },
+  "mobicom_2026_summer": {
+    "source_urls": [
+      "https://www.sigmobile.org/mobicom/2026/cfp.html"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "formats": [
+        ".pdf"
+      ],
+      "max_pages_before_refs": 12,
+      "count_excludes": [
+        "references",
+        "appendices after references"
+      ],
+      "count_includes": [
+        "figures",
+        "tables"
+      ],
+      "max_file_size_mb": 15,
+      "font_size_pt": 10,
+      "page_size": "US Letter",
+      "page_numbers": true,
+      "anonymized": true,
+      "notes": [
+        "Appendices must follow the references and are optional reading. The CFP recommends acmart[sigconf,10pt]; equivalent compliant formatting is accepted.",
+        "CFP says file size LESS THAN 15 MB; the validator uses its normal inclusive MB bound, so confirm a file exactly at the boundary."
+      ],
+      "main_text_end_headings": [
+        "References"
+      ]
+    },
+    "abstract": {
+      "min_words": 100
+    },
+    "references": {
+      "notes": [
+        "Unlimited bibliography pages. Self-citations must use third person; do not delete bibliographic entries to anonymize."
+      ]
+    }
+  },
+  "mobicom_2026_winter": {
+    "source_urls": [
+      "https://www.sigmobile.org/mobicom/2026/cfp.html"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "formats": [
+        ".pdf"
+      ],
+      "max_pages_before_refs": 12,
+      "count_excludes": [
+        "references",
+        "appendices after references"
+      ],
+      "count_includes": [
+        "figures",
+        "tables"
+      ],
+      "max_file_size_mb": 15,
+      "font_size_pt": 10,
+      "page_size": "US Letter",
+      "page_numbers": true,
+      "anonymized": true,
+      "notes": [
+        "Appendices must follow the references and are optional reading. The CFP recommends acmart[sigconf,10pt]; equivalent compliant formatting is accepted.",
+        "CFP says file size LESS THAN 15 MB; the validator uses its normal inclusive MB bound, so confirm a file exactly at the boundary."
+      ],
+      "main_text_end_headings": [
+        "References"
+      ]
+    },
+    "abstract": {
+      "min_words": 100
+    },
+    "references": {
+      "notes": [
+        "Unlimited bibliography pages. Self-citations must use third person; do not delete bibliographic entries to anonymize."
+      ]
+    }
+  },
+  "mobisys_2026": {
+    "source_urls": [
+      "https://www.sigmobile.org/mobisys/2026/call_for_papers/"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "formats": [
+        ".pdf"
+      ],
+      "max_pages_before_refs": 12,
+      "main_text_end_headings": [
+        "Appendix",
+        "Appendices"
+      ],
+      "count_excludes": [
+        "references",
+        "appendices"
+      ],
+      "count_includes": [
+        "figures",
+        "tables"
+      ],
+      "font_size_pt": 10,
+      "page_size": "US Letter",
+      "page_numbers": true,
+      "anonymized": false,
+      "notes": [
+        "MobiSys 2026 explicitly reverts to single-blind review: author names, affiliations and contact details must appear in the manuscript.",
+        "acmart[sigconf,10pt] is recommended; equivalent compliant formatting accepted."
+      ]
+    },
+    "title_page": {
+      "required_items": [
+        "authors",
+        "affiliations",
+        "corresponding_email"
+      ]
+    },
+    "statements": {
+      "notes": [
+        "LLM-generated text must be clearly identified; editing/proofreading author text is exempt. Ethics review certification is required for human experiments or non-public human-derived data. These conditional policies require author review."
+      ]
+    }
+  },
+  "sensys_2026_nov": {
+    "source_urls": [
+      "https://sensys.acm.org/2026/cfp.html"
+    ],
+    "retrieved": "2026-10-18",
+    "article_type_field": "article_type",
+    "manuscript": {
+      "max_pages_before_refs": 12,
+      "count_excludes": [
+        "references"
+      ],
+      "allow_appendix": false,
+      "font_size_pt": 9,
+      "anonymized": true,
+      "notes": [
+        "Two-column single-spaced; acmart with sigconf preferred, not mandatory.",
+        "This entry covers NEW submissions in the second cycle. Resubmissions from cycle one may include a response appendix of at most four pages; that exception is not modeled by this new-submission entry."
+      ],
+      "main_text_end_headings": [
+        "References"
+      ]
+    },
+    "article_types": {
+      "Experiences short paper": {
+        "manuscript": {
+          "max_pages_before_refs": 6
+        }
+      }
+    },
+    "statements": {
+      "required_if": {
+        "ethics_approval": "human_participants"
+      },
+      "notes": [
+        "For human participants, an ethical statement is required, using generic non-identifying wording."
+      ]
+    },
+    "references": {
+      "notes": [
+        "Excluded from both full and short paper limits."
+      ]
+    }
+  },
+  "neurips_2025": {
+    "source_urls": [
+      "https://neurips.cc/Conferences/2025/CallForPapers",
+      "https://media.neurips.cc/Conferences/NeurIPS2025/Styles.zip"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "formats": [
+        ".pdf"
+      ],
+      "max_pages_before_refs": 9,
+      "main_text_end_headings": [
+        "NeurIPS Paper Checklist",
+        "Paper Checklist",
+        "Checklist",
+        "Appendix",
+        "Appendices"
+      ],
+      "count_excludes": [
+        "references",
+        "paper checklist",
+        "technical appendices"
+      ],
+      "count_includes": [
+        "figures",
+        "tables"
+      ],
+      "max_file_size_mb": 50,
+      "anonymized": true,
+      "template_required": true,
+      "latex_class": "neurips_2025",
+      "notes": [
+        "Checklist is required in the same PDF. Technical appendices have no page limit and are optional reading. Acknowledgments must be omitted during review."
+      ]
+    },
+    "sections": {
+      "required": [
+        "NeurIPS Paper Checklist"
+      ]
+    },
+    "supplementary": {
+      "formats": [
+        ".zip"
+      ],
+      "max_file_size_mb": 100
+    },
+    "notes": [
+      "Historical 2025 main track; do not apply these rules or URL to 2026. The fetched 2026 CFP did not contain verifiable submission instructions."
+    ]
+  },
+  "aaai_2027": {
+    "source_urls": [
+      "https://aaai.org/conference/aaai/aaai-27/submission-instructions/"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "formats": [
+        ".pdf"
+      ],
+      "max_pages": 9,
+      "max_pages_before_refs": 7,
+      "count_includes": [
+        "ethics statements within seven content pages"
+      ],
+      "anonymized": true,
+      "template_required": true,
+      "page_size": "US Letter",
+      "notes": [
+        "Up to nine total pages: pages eight and nine are exclusively references; seven non-reference content pages maximum.",
+        "Reproducibility checklist must be uploaded separately. Existing portal field remains optional for the abstract-registration stage; author must supply it at full-paper submission."
+      ],
+      "main_text_end_headings": [
+        "References"
+      ]
+    },
+    "notes": [
+      "Only the main technical track is covered."
+    ]
+  },
+  "ieee": {
+    "source_urls": [
+      "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf",
+      "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/",
+      "https://ctan.org/pkg/ieeetran",
+      "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "recommended_latex_class": "IEEEtran",
+      "template_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/",
+      "notes": [
+        "Use the journal-specific IEEE template selected through the Template Selector; IEEEtran detection is advisory and cannot establish PDF conformance. No generic page or geometry limit is asserted."
+      ]
+    },
+    "abstract": {
+      "recommended_min_words": 150,
+      "recommended_max_words": 250,
+      "no_references": true,
+      "notes": [
+        "Editorial Style Manual guidance: one paragraph, no numbered equations, citations or footnotes. Journal-specific abstract limits override the advisory range."
+      ]
+    },
+    "keywords": {
+      "notes": [
+        "Editorial Style Manual: include Index Terms in alphabetical order; use IEEE standardized keywords where possible. No generic keyword count is imposed."
+      ]
+    },
+    "references": {
+      "style": "IEEE",
+      "numbered": true,
+      "notes": [
+        "Editorial Style Manual references examples use numbered square-bracket citations and reference entries. This is a heuristic style check, not a reference completeness check."
+      ]
+    },
+    "notes": [
+      "Generic IEEE style guidance only; journal-specific rules are recorded separately."
     ]
   }
 }
