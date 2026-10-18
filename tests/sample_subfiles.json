@@ -1145,5 +1145,14 @@
       "authors": "~Ada_Example1 | Ada Example | example.edu",
       "manuscript_file": "tests/manuscript_files/neurips_2025/manuscript.pdf"
     }
+  },
+  "ieee.sub": {
+    "venue": "ieee",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/ieee_twc/manuscript.pdf"
+    }
   }
 }

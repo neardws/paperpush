@@ -1,5 +1,5 @@
-"""IEEE Transactions on Intelligent Transportation Systems: configuration binding; no live-portal verification."""
+"""T-ITS: verified journal rules; ReX driver tested on fixtures only."""
 
-from ..configured import ConfiguredVenue
+from .main import RexVenue
 
-VENUE = ConfiguredVenue("ieee_tits")
+VENUE = RexVenue("ieee_tits")

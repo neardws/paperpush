@@ -1,0 +1,13 @@
+<!doctype html>
+<!-- Synthetic fixture modeled on public workflow text: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_author-details.html
+Fetched 2026-10-18. Editable correction inputs are hypotheses, not captured live DOM.
+No authenticated IEEE portal was accessed. -->
+<main><h1>Author Details</h1><h2>Author List</h2><label>Email<input type="email"></label><label>Country/Location<select><option>Example Country</option></select></label><label>Affiliation(s)<input></label><label><input type="radio" name="corresponding">Corresponding Author</label><button>Connect your ORCID iD</button>
+<button>Confirm</button><button>Save</button><button>Save and Continue</button><button>Continue</button><button>Submit</button></main>
+<script>
+window.clicks = [];
+window.changes = 0;
+document.addEventListener('click', e => window.clicks.push(e.target.textContent));
+document.addEventListener('change', () => window.changes++);
+document.addEventListener('submit', e => { e.preventDefault(); window.clicks.push('FORM SUBMIT'); });
+</script>

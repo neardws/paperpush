@@ -77,6 +77,7 @@ The same section keys as a venue entry (plus `notes`); used as the value of each
 | `template_required` | boolean or null | Must use the venue's style file or template. |
 | `template_url` | string or null | URL of the venue's template. |
 | `latex_class` | string or null | Required LaTeX document class or style file. |
+| `recommended_latex_class` | string or null | Recommended LaTeX class; source detection warns and never proves PDF conformance. |
 | `latex_options` | list of string or null | Required LaTeX class/package options, when explicitly mandated by the source. |
 | `allow_appendix` | boolean or null | Whether appendices are allowed in the submitted manuscript. None means unspecified. |
 | `template_layout` | [TemplateLayout](#templatelayout) or null | Geometry of the compiled template, checked against the manuscript PDF to catch shrunken margins, font, or line spacing. |
@@ -100,6 +101,9 @@ The same section keys as a venue entry (plus `notes`); used as the value of each
 |---|---|---|
 | `max_words` | integer or null | Maximum abstract length in words. |
 | `min_words` | integer or null | Minimum abstract length in words. |
+| `min_words_enforced` | boolean or null | Report an abstract below min_words as an error when the journal explicitly enforces the lower bound; otherwise warn. |
+| `recommended_min_words` | integer or null | Advisory abstract minimum; used only without journal-specific word limits. |
+| `recommended_max_words` | integer or null | Advisory abstract maximum; used only without journal-specific word limits. |
 | `max_characters` | integer or null | Maximum abstract length in characters. |
 | `structured` | boolean or null | Abstract must be structured into labelled subsections. |
 | `structured_headings` | list of string or null | The subsection labels a structured abstract must carry. |

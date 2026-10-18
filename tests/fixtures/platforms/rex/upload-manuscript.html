@@ -1,0 +1,14 @@
+<!doctype html>
+<!-- Synthetic fixture modeled on public workflow text: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html
+https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html
+Fetched 2026-10-18. Editable correction inputs are hypotheses, not captured live DOM.
+No authenticated IEEE portal was accessed. -->
+<main><h1>Upload Manuscript</h1><h2>Required Files</h2><h3>Main Manuscript</h3><button>Add Files</button><label>Main Document - LaTeX<input type="file" accept=".tex,.zip,.tar.gz"></label><label>Main Document - LaTeX PDF<input type="file" accept=".pdf"></label><button>Select Main File</button><label>Cover Letter<input type="file"></label><label>Figures<input type="file" multiple></label><label>Conflict of Interest Statement<input type="file"></label><label>Author Response<input type="file"></label><label>Title Page<input type="file"></label><label><input type="checkbox" name="coi">None of the authors have a conflict of interest to disclose</label>
+<button>Confirm</button><button>Save</button><button>Save and Continue</button><button>Continue</button><button>Submit</button></main>
+<script>
+window.clicks = [];
+window.changes = 0;
+document.addEventListener('click', e => window.clicks.push(e.target.textContent));
+document.addEventListener('change', () => window.changes++);
+document.addEventListener('submit', e => { e.preventDefault(); window.clicks.push('FORM SUBMIT'); });
+</script>

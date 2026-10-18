@@ -167,6 +167,7 @@ def build_venue_groups() -> str:
         members = by_type.get(venue_type, [])
         listing = ", ".join(_linked_name(j) for j in members) if members else "_none yet_"
         paragraphs.append(f"**{heading}:** {listing}")
+    paragraphs.append("**Any IEEE Author Portal journal:** use `ieee:<journal-code>` without adding configuration, for example `paperpush subfile ieee:t-its -o paper.sub`. Unknown codes receive only generic IEEE checks; check the journal’s Information for Authors manually. [Commands, sources and attended ReX workflow](docs/cs-venues.md#any-ieee-author-portal-journal). ReX was tested against synthetic fixtures only, never the live portal.")
     return "\n\n".join(paragraphs)
 
 

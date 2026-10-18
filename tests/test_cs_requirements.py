@@ -110,7 +110,7 @@ def test_new_entries_have_provenance_and_explicit_editions():
             assert venue.edition["year"] in slug
         if not venue.submission_url:
             assert venue.unverified
-            assert any("UNVERIFIED" in n for n in reqs[slug].get("notes", [])) or slug == "ieee_tvt"
+            assert any("UNVERIFIED" in n for n in reqs[slug].get("notes", [])) or slug in {"ieee", "ieee_tvt"}
 
 
 def test_charge_threshold_is_not_a_page_cap():
@@ -127,3 +127,66 @@ def test_sourced_tvt_figure_and_reference_rules(tmp_path):
     issues = check_manuscript_requirements(get_venue("ieee_tvt"), {"manuscript_file": str(manuscript), "figure_files": str(image), "article_type": "Regular (initial)"})
     assert any("220 mm" in i.message for i in issues)
     assert any("no 'References' section" in i.message for i in issues)
+
+
+@pytest.mark.parametrize("slug", ["ieee_tits", "ieee:t-its"])
+@pytest.mark.parametrize("article_type,limit", [("Regular", 16), ("Short", 12), ("Practitioner", 12), ("Survey", 24)])
+def test_verified_tits_page_caps_and_reference_scope(tmp_path, slug, article_type, limit):
+    venue = get_venue(slug)
+    reqs = resolve(get_requirements(slug), {"article_type": article_type})
+    assert reqs.manuscript.max_pages_before_refs == limit
+    assert reqs.manuscript.max_pages is None
+    # References-counting policy is unstated: enforce main text, leave the
+    # whole-document question to the author instead of inventing a stricter cap.
+    at_limit = pdf(tmp_path, limit, 3)
+    issues = check_manuscript_requirements(venue, {"article_type": article_type, "manuscript_file": str(at_limit)})
+    assert not any(i.level == "error" and "page limit" in i.message for i in issues)
+    over_limit = pdf(tmp_path, limit + 1, 1)
+    issues = check_manuscript_requirements(venue, {"article_type": article_type, "manuscript_file": str(over_limit)})
+    assert any(i.level == "error" and f"{limit}-page limit" in i.message for i in issues)
+
+
+@pytest.mark.parametrize("slug", ["ieee_tits", "ieee:t-its"])
+@pytest.mark.parametrize("words,error", [(149, True), (150, False), (250, False), (251, True)])
+def test_tits_journal_abstract_bounds_are_errors(slug, words, error):
+    issues = check_manuscript_requirements(get_venue(slug), {"abstract": "word " * words})
+    assert any(i.level == "error" and i.field == "abstract" for i in issues) == error
+    assert not any("IEEE style guidance: abstract" in i.message for i in issues)
+
+
+@pytest.mark.parametrize("slug", ["ieee_tits", "ieee:t-its"])
+def test_verified_tits_metadata_and_keyword_groups(slug):
+    venue = get_venue(slug)
+    reqs = get_requirements(slug)
+    assert venue.submission_url == "https://ieee.atyponrex.com/journal/t-its"
+    assert venue.anonymous is False and reqs.manuscript.anonymized is False
+    assert reqs.manuscript.template_required is True
+    assert reqs.manuscript.latex_class == "IEEEtran"
+    assert reqs.manuscript.double_spacing is False
+    assert reqs.abstract.no_references is True and reqs.abstract.no_abbreviations is True
+    assert reqs.keywords.max == 6
+    assert not any("UNVERIFIED" in n for n in reqs.notes)
+    assert any("Single-anonymous" in n for n in reqs.notes)
+    assert any("biographies and photos" in n for n in reqs.notes)
+    assert any("prior paper ID" in n for n in reqs.cover_letter.notes)
+    fields = {f.id: f for f in venue.fields}
+    assert "keywords" not in fields
+    assert not fields["cover_letter"].required
+    for fid, required, minimum in [("free_keywords", False, 0), ("methodology_keywords", True, 1), ("application_keywords", True, 1)]:
+        assert fields[fid].type == "multichoice"
+        assert fields[fid].required is required
+        assert fields[fid].min_count == minimum and fields[fid].max_count == 2
+
+
+@pytest.mark.parametrize("slug", ["ieee_tits", "ieee:t-its"])
+@pytest.mark.parametrize("field", ["free_keywords", "methodology_keywords", "application_keywords"])
+def test_tits_keyword_groups_cannot_exceed_six_total(slug, field):
+    values = {"free_keywords": "first, second", "methodology_keywords": "method one, method two", "application_keywords": "application one, application two"}
+    options = dict(check_sensitive=False, check_links=False, check_references=False, check_manuscript=False, check_hidden_text=False, check_openreview=False)
+    venue = get_venue(slug)
+    assert not any(i.level == "error" and i.field in values for i in validate(SubFile(venue=slug, values=values), venue, **options))
+    values[field] += ", extra"
+    assert any(i.level == "error" and i.field == field for i in validate(SubFile(venue=slug, values=values), venue, **options))
+    values[field] = ""
+    errors = validate(SubFile(venue=slug, values=values), venue, **options)
+    assert any(i.level == "error" and i.field == field for i in errors) == (field != "free_keywords")

@@ -25,4 +25,9 @@ authors: |
 #   Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/td/write-for-us/15045. 
 manuscript_file: tests/manuscript_files/ieee_tpds/manuscript.pdf
 
+# Keywords / Index Terms (textarea, optional)
+#   Use standardized Index Terms; alphabetical order is style guidance, not a journal-specific keyword count. Source: https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf
+keywords: |
+  
+
 # vim: set filetype=yaml :

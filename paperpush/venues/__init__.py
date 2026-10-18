@@ -18,6 +18,9 @@ the layout is literally the only place a module location is declared -- adding a
 venue means adding its file, nothing else. The one exception is the ``template/``
 subpackage (see :data:`_SCAFFOLD_PORTALS`): it is a copy-me scaffold, not a real
 portal, so its leaf is skipped even though it defines a ``VENUE``.
+
+Parameterized ``ieee:<journal-code>`` targets are resolved by the database and
+use the shared ReX runner; they do not need per-code modules or registry entries.
 """
 
 from __future__ import annotations
@@ -185,6 +188,12 @@ def import_venue(slug: str):
     is registered for the slug, or propagates :class:`ImportError` if the module
     exists but a dependency (e.g. Playwright) is missing.
     """
+    if slug.lower().startswith("ieee:"):
+        from types import SimpleNamespace
+        from ..database import get_venue
+        from .rex.main import RexVenue
+
+        return SimpleNamespace(VENUE=RexVenue(get_venue(slug).slug))
     path = SLUG_TO_MODULE[slug.lower()]
     return importlib.import_module(f".{path}", __package__)
 
@@ -196,6 +205,11 @@ def try_import_venue(slug: str):
     module (e.g. an optional dependency is absent), so callers that merely probe a
     venue's capabilities can degrade gracefully rather than raising.
     """
+    if slug.lower().startswith("ieee:"):
+        try:
+            return import_venue(slug)
+        except (KeyError, ImportError):
+            return None
     path = SLUG_TO_MODULE.get(slug.lower())
     if path is None:
         return None

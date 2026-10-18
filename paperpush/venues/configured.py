@@ -146,6 +146,8 @@ class ConfiguredVenue(Venue):
             while True:
                 filled, manual = self.fill_page(page, values)
                 print(f"Filled: {', '.join(filled) or '(none)'}. Manual/on another page: {', '.join(manual) or '(none)'}. Review all portal declarations yourself.")
+                if hasattr(self, "page_instructions"):
+                    print(self.page_instructions(page))
                 try:
                     command = input("Navigate to another wizard page and type 'fill' to fill it; Enter finishes and closes the browser. Only you can submit: ")
                 except (EOFError, KeyboardInterrupt, OSError):

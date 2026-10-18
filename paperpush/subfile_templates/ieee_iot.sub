@@ -25,4 +25,61 @@ authors: |
 #   Source: https://ieee-iotj.org/guidelines-for-authors/. 
 manuscript_file: 
 
+# Keywords / Index Terms (textarea, optional)
+#   Use standardized Index Terms; alphabetical order is style guidance, not a journal-specific keyword count. Source: https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf
+keywords: |
+  
+
+# Main Document - LaTeX (file, optional)
+#   Optional LaTeX submission route. Select this manuscript type yourself; archives require manual Select Main File confirmation. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html
+latex_source_file: 
+
+# Main Document - LaTeX PDF (file, optional)
+#   Compiled PDF of the same LaTeX main document; required when source is supplied. manuscript_file may point to the same PDF. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html
+latex_pdf_file: 
+
+# Cover letter (file, optional)
+#   Optional additional file when requested by the journal; neither a universal requirement nor universal format restriction is asserted. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html
+cover_letter: 
+
+# Figures (filelist, optional)
+#   Optional additional files; labels/descriptions and upload dialogs are manual. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html
+figure_files: |
+  
+
+# Supplementary files (filelist, optional)
+#   Optional additional manuscript files; journal-specific categories are manual. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html
+supplementary_files: |
+  
+
+# Portal Article Type (text, optional)
+#   Copy an exact option from the journal portal. Options differ by journal; this is distinct from a configured preparation stage selector (article_type). Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html
+portal_article_type: 
+
+# Conflict of interest statement (file, optional)
+#   Map an existing statement only. The no-conflicts checkbox is an author declaration. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html
+competing_interests_file: 
+
+# Author response (revision) (file, optional)
+#   Required by the documented revision workflow; revision applicability is confirmed manually. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html
+author_response_file: 
+
+# Title page (double anonymized) (file, optional)
+#   When required by the selected peer review type. Confirm anonymity manually; use validate --anonymous for an arbitrary target. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html
+title_page_file: 
+
+# Submission requirement confirmations (textarea, optional)
+#   The author must review and check each journal-specific requirement. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html
+submission_requirements: |
+  
+
+# Additional Information declarations (textarea, optional)
+#   Journal-specific questions, consent, licenses and payment choices require the author. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_additional-information.html
+additional_information: |
+  
+
+# Peer review type (text, optional)
+#   Author selects the review type if the journal permits; it may require replacing files. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html
+peer_review_type: 
+
 # vim: set filetype=yaml :

@@ -1,5 +1,5 @@
 """IEEE Transactions on Network Science and Engineering: configuration binding; no live-portal verification."""
 
-from ..configured import ConfiguredVenue
+from .main import RexVenue
 
-VENUE = ConfiguredVenue("ieee_tnse")
+VENUE = RexVenue("ieee_tnse")

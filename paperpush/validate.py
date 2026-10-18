@@ -165,7 +165,7 @@ def _check_file_field(field: Field, raw: str) -> list[Issue]:
         issues.append(Issue(ERROR, field.id, f"not a regular file: {path}"))
         return issues
     if field.accept:
-        if path.suffix.lower() not in {s.lower() for s in field.accept}:
+        if not any(path.name.lower().endswith(s.lower()) for s in field.accept):
             issues.append(
                 Issue(
                     WARNING,

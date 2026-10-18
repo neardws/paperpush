@@ -1,5 +1,5 @@
 """IEEE Transactions on Wireless Communications: configuration binding; no live-portal verification."""
 
-from ..configured import ConfiguredVenue
+from .main import RexVenue
 
-VENUE = ConfiguredVenue("ieee_twc")
+VENUE = RexVenue("ieee_twc")

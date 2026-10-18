@@ -15,7 +15,7 @@ from __future__ import annotations
 import copy
 import json
 import logging
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from dataclasses import field as dataclass_field
 from functools import lru_cache
 from pathlib import Path
@@ -713,6 +713,15 @@ def get_venue(slug: str) -> Venue:
     """
     raw = _load_raw()
     key = slug.lower()
+    if key.startswith("ieee:"):
+        from .ieee import journal_code, portal_url
+
+        code = journal_code(key)
+        url = portal_url(code)
+        # A known code retains the journal's sourced rules, including limits.
+        profile = next((k for k, v in raw.items() if v.get("platform") == "rex" and v.get("submission_url") == url), "ieee")
+        base = get_venue(profile)
+        return replace(base, slug=key, inherits=profile, submission_url=url, name=base.name if profile != "ieee" else f"IEEE journal ({code})")
     for candidate, data in raw.items():
         if candidate.lower() == key or data.get("name", "").lower() == key:
             logger.debug("Resolved venue %r to %r", slug, candidate)

@@ -599,6 +599,299 @@
         "Styles/neurips_2025.tex",
         "Styles/neurips_2025.pdf"
       ]
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html",
+      "file": "/tmp/ieee-evidence/t_auth_article-type.html",
+      "bytes": 24631,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+      "file": "/tmp/ieee-evidence/t_auth_upload-manuscript.html",
+      "bytes": 35271,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html",
+      "file": "/tmp/ieee-evidence/t_auth_upload-latex.html",
+      "bytes": 32117,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_title.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_title.html",
+      "file": "/tmp/ieee-evidence/t_auth_title.html",
+      "bytes": 23129,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_abstract.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_abstract.html",
+      "file": "/tmp/ieee-evidence/t_auth_abstract.html",
+      "bytes": 23268,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_authors.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_authors.html",
+      "file": "/tmp/ieee-evidence/t_auth_authors.html",
+      "bytes": 22563,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_affiliations.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_affiliations.html",
+      "file": "/tmp/ieee-evidence/t_auth_affiliations.html",
+      "bytes": 26787,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_author-details.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_author-details.html",
+      "file": "/tmp/ieee-evidence/t_auth_author-details.html",
+      "bytes": 34514,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_match-organizations.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_match-organizations.html",
+      "file": "/tmp/ieee-evidence/t_auth_match-organizations.html",
+      "bytes": 28631,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_additional-information.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_additional-information.html",
+      "file": "/tmp/ieee-evidence/t_auth_additional-information.html",
+      "bytes": 24011,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_final-review.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_final-review.html",
+      "file": "/tmp/ieee-evidence/t_auth_final-review.html",
+      "bytes": 32823,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_start-new-submission.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_start-new-submission.html",
+      "file": "/tmp/ieee-evidence/t_auth_start-new-submission.html",
+      "bytes": 23935,
+      "note": "Public help text verified for field/workflow descriptions; selectors remain synthetic hypotheses."
+    },
+    {
+      "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf",
+      "file": "/tmp/ieee-evidence/IEEE-Editorial-Style-Manual-for-Authors.pdf",
+      "bytes": 809723,
+      "note": "Inspected public source; blocked pages provide no journal rules."
+    },
+    {
+      "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://docs.google.com/document/d/1j1L96U2NagwWI9MEVDNVKt9pXxRzTH7h3krI3Mb6wZE/edit?usp=sharing",
+      "file": "/tmp/ieee-evidence/IEEE_Reference_Guide.pdf",
+      "bytes": 2719248,
+      "note": "Redirected to Google Docs HTML; not used as PDF evidence."
+    },
+    {
+      "url": "https://ctan.org/pkg/ieeetran",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://ctan.org/pkg/ieeetran",
+      "file": "/tmp/ieee-evidence/ieeetran",
+      "bytes": 16385,
+      "note": "Inspected public source; blocked pages provide no journal rules."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/author-information/",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "final_url": "https://ieee-itss.org/pub/t-its/author-information/",
+      "file": "/tmp/ieee-evidence/tits.html",
+      "bytes": 5492,
+      "note": "Inspected public source; blocked pages provide no journal rules."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/",
+      "retrieved": "2026-10-18",
+      "file": "/workspace/its.html",
+      "status": "prefetched",
+      "note": "Pre-existing public homepage HTML with canonical URL and literal https://ieee.atyponrex.com/journal/t-its link. Fresh fetch 403; used for portal mapping only."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-main.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/?paperpush=1",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-query.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://www.ieee-itss.org/pub/t-its/",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-www.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-noslash.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/paper-submission/",
+      "retrieved": "2026-10-18",
+      "status": 403,
+      "file": "/tmp/ieee-evidence/tits-submission.html",
+      "note": "Blocked; no requirements derived."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_article-type.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_article-type.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_upload-manuscript.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_upload-manuscript.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_upload-latex.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_upload-latex.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_title.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_title.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_abstract.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_abstract.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_authors.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_authors.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_affiliations.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_affiliations.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_author-details.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_author-details.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_match-organizations.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_match-organizations.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_additional-information.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_additional-information.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_final-review.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_final-review.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_start-new-submission.html",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "final_url": "https://rex-docs.atypon.com/rex-submission/author_portal/t_auth_start-new-submission.html",
+      "note": "Generic Atypon help initially inspected, then IEEE-specific help used for implementation. Scratch content was overwritten by the IEEE-specific fetch; size is not retained."
+    },
+    {
+      "url": "https://rex-docs.atypon.com/rex-submission/",
+      "retrieved": "2026-10-18",
+      "status": 200,
+      "file": "/tmp/ieee-evidence/index.html",
+      "note": "Help index used to discover step pages."
+    },
+    {
+      "url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/",
+      "retrieved": "2026-10-18",
+      "status": "prefetched",
+      "file": "/workspace/codexrun/ieee_sources/README.md",
+      "note": "User-supplied verbatim public IEEE Author Center excerpt: use the interactive IEEE Template Selector. IEEEtran name independently verified from CTAN; no PDF geometry inferred."
+    },
+    {
+      "url": "https://ieee-itss.org/pub/t-its/",
+      "retrieved": "2026-10-18",
+      "status": "verified-user-provided",
+      "page_timestamp": "2026-07-15",
+      "provided_by": "Neil",
+      "reference_commit": "7fe8d5f96d2f6517ee00c2feca6d609d7025cd41",
+      "note": "Verified journal requirements and portal provided by Neil and preserved in commit 7fe8d5f. Restored within IEEE inheritance: article types and main-text caps, IEEEtran, abstract limits, keyword categories, single-anonymous review, resubmission cover letter and accepted final files. Earlier curl failures do not invalidate this verified evidence."
     }
   ],
   "new_entries": [

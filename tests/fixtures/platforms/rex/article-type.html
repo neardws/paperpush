@@ -1,0 +1,13 @@
+<!doctype html>
+<!-- Synthetic fixture modeled on public workflow text: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html
+Fetched 2026-10-18. Editable correction inputs are hypotheses, not captured live DOM.
+No authenticated IEEE portal was accessed. -->
+<main><h1>Article Type</h1><label for="article-type">Article Type</label><select id="article-type"><option>Research Article</option><option>Review</option></select><label><input type="checkbox" name="requirements">All submission requirements</label>
+<button>Confirm</button><button>Save</button><button>Save and Continue</button><button>Continue</button><button>Submit</button></main>
+<script>
+window.clicks = [];
+window.changes = 0;
+document.addEventListener('click', e => window.clicks.push(e.target.textContent));
+document.addEventListener('change', () => window.changes++);
+document.addEventListener('submit', e => { e.preventDefault(); window.clicks.push('FORM SUBMIT'); });
+</script>

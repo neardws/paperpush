@@ -5243,7 +5243,8 @@
     "retrieved": "2026-10-18",
     "notes": [
       "UNVERIFIED: https://www.computer.org/csdl/journal/tm/write-for-us/15045: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
-    ]
+    ],
+    "inherits": "ieee"
   },
   "ieee_tpds": {
     "source_urls": [
@@ -5252,7 +5253,8 @@
     "retrieved": "2026-10-18",
     "notes": [
       "UNVERIFIED: https://www.computer.org/csdl/journal/td/write-for-us/15045: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
-    ]
+    ],
+    "inherits": "ieee"
   },
   "ieee_tits": {
     "source_urls": [
@@ -5269,6 +5271,9 @@
         "IEEE double-column template, single-spaced. Page timestamp of the source: 2026-07-15; where the linked 2010 PDF conflicts, the web page is followed.",
         "Page caps are the suggested length + 6 extra pages (Regular 16, Short 12, Practitioner 12, Survey 24). Extra pages beyond the suggested length (Regular 10, Short 6, Practitioner 6, Survey 18) carry a $175 per-page overlength charge after acceptance; the schema has no soft limit, so check that manually.",
         "The source does not say whether references count toward the page length. The cap is enforced on the main text only (max_pages_before_refs), which is never stricter than the journal; confirm whether the whole document must also fit."
+      ],
+      "main_text_end_headings": [
+        "References"
       ]
     },
     "article_types": {
@@ -5300,7 +5305,8 @@
       "no_abbreviations": true,
       "notes": [
         "One paragraph; no displayed equations, tables or footnotes."
-      ]
+      ],
+      "min_words_enforced": true
     },
     "keywords": {
       "max": 6,
@@ -5316,7 +5322,8 @@
     "notes": [
       "Single-anonymous review.",
       "Final files for accepted papers: PDF plus LaTeX or Word source, original figure files, and author biographies and photos for Regular and Survey papers."
-    ]
+    ],
+    "inherits": "ieee"
   },
   "acm_tosn": {
     "source_urls": [
@@ -5401,7 +5408,8 @@
       "required": [
         "References"
       ]
-    }
+    },
+    "inherits": "ieee"
   },
   "ieee_twc": {
     "source_urls": [
@@ -5441,7 +5449,8 @@
         "Introduction",
         "Conclusions"
       ]
-    }
+    },
+    "inherits": "ieee"
   },
   "ieee_tnse": {
     "source_urls": [
@@ -5476,7 +5485,8 @@
       "notes": [
         "Include a comparison table of related work emphasizing differences from the submission."
       ]
-    }
+    },
+    "inherits": "ieee"
   },
   "ieee_iot": {
     "source_urls": [
@@ -5502,7 +5512,8 @@
       "notes": [
         "All authors need ORCID; this is an account/submission requirement, not proof that ORCID must be printed in the manuscript."
       ]
-    }
+    },
+    "inherits": "ieee"
   },
   "ieee_jsac": {
     "source_urls": [
@@ -5511,17 +5522,18 @@
     "retrieved": "2026-10-18",
     "manuscript": {
       "template_required": true,
-      "latex_class": "IEEEtran",
       "notes": [
         "A double-column IEEE-format version is required in addition to a single-column version. Single-column version: at most 30 double-spaced pages, 12-point font. This limit is not applied to the double-column upload.",
         "Guest editors can set special-issue page caps; no generic journal-wide hard cap is inferred from overlength-charge thresholds."
-      ]
+      ],
+      "latex_class": "IEEEtran"
     },
     "upload": {
       "notes": [
         "Upload both single-column and double-column versions as instructed by the selected special issue. The second upload must be mapped manually."
       ]
-    }
+    },
+    "inherits": "ieee"
   },
   "infocom_2026": {
     "source_urls": [
@@ -5776,6 +5788,45 @@
     },
     "notes": [
       "Only the main technical track is covered."
+    ]
+  },
+  "ieee": {
+    "source_urls": [
+      "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf",
+      "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/",
+      "https://ctan.org/pkg/ieeetran",
+      "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html"
+    ],
+    "retrieved": "2026-10-18",
+    "manuscript": {
+      "recommended_latex_class": "IEEEtran",
+      "template_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/",
+      "notes": [
+        "Use the journal-specific IEEE template selected through the Template Selector; IEEEtran detection is advisory and cannot establish PDF conformance. No generic page or geometry limit is asserted."
+      ]
+    },
+    "abstract": {
+      "recommended_min_words": 150,
+      "recommended_max_words": 250,
+      "no_references": true,
+      "notes": [
+        "Editorial Style Manual guidance: one paragraph, no numbered equations, citations or footnotes. Journal-specific abstract limits override the advisory range."
+      ]
+    },
+    "keywords": {
+      "notes": [
+        "Editorial Style Manual: include Index Terms in alphabetical order; use IEEE standardized keywords where possible. No generic keyword count is imposed."
+      ]
+    },
+    "references": {
+      "style": "IEEE",
+      "numbered": true,
+      "notes": [
+        "Editorial Style Manual references examples use numbered square-bracket citations and reference entries. This is a heuristic style check, not a reference completeness check."
+      ]
+    },
+    "notes": [
+      "Generic IEEE style guidance only; journal-specific rules are recorded separately."
     ]
   }
 }

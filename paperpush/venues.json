@@ -3528,45 +3528,42 @@
     "fields": [
       {
         "id": "title",
-        "label": "Title",
-        "type": "text",
         "required": false,
-        "autofill": "extract",
         "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. "
       },
       {
         "id": "abstract",
-        "label": "Abstract",
-        "type": "textarea",
         "required": false,
-        "autofill": "extract",
         "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. "
       },
       {
         "id": "authors",
-        "label": "Authors",
-        "type": "authorlist",
         "required": false,
-        "autofill": "extract",
-        "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.",
-        "fields": [
-          "name",
-          "email?",
-          "affiliation?",
-          "orcid?",
-          "corresponding"
-        ]
+        "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers."
       },
       {
         "id": "manuscript_file",
         "label": "Manuscript",
-        "type": "file",
         "required": false,
-        "autofill": "filemap",
         "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. "
       }
     ],
-    "description": "Preparation and validation only; portal URL unverified. Platform assignment is provisional."
+    "description": "Preparation and validation only; portal URL unverified. Platform assignment is provisional.",
+    "inherits": "ieee",
+    "removed_fields": [
+      "latex_source_file",
+      "latex_pdf_file",
+      "cover_letter",
+      "figure_files",
+      "supplementary_files",
+      "portal_article_type",
+      "competing_interests_file",
+      "author_response_file",
+      "title_page_file",
+      "submission_requirements",
+      "additional_information",
+      "peer_review_type"
+    ]
   },
   "ieee_tpds": {
     "name": "IEEE Transactions on Parallel and Distributed Systems",
@@ -3586,45 +3583,42 @@
     "fields": [
       {
         "id": "title",
-        "label": "Title",
-        "type": "text",
         "required": false,
-        "autofill": "extract",
         "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/td/write-for-us/15045. "
       },
       {
         "id": "abstract",
-        "label": "Abstract",
-        "type": "textarea",
         "required": false,
-        "autofill": "extract",
         "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/td/write-for-us/15045. "
       },
       {
         "id": "authors",
-        "label": "Authors",
-        "type": "authorlist",
         "required": false,
-        "autofill": "extract",
-        "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/td/write-for-us/15045. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.",
-        "fields": [
-          "name",
-          "email?",
-          "affiliation?",
-          "orcid?",
-          "corresponding"
-        ]
+        "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/td/write-for-us/15045. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers."
       },
       {
         "id": "manuscript_file",
         "label": "Manuscript",
-        "type": "file",
         "required": false,
-        "autofill": "filemap",
         "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/td/write-for-us/15045. "
       }
     ],
-    "description": "Preparation and validation only; portal URL unverified. Platform assignment is provisional."
+    "description": "Preparation and validation only; portal URL unverified. Platform assignment is provisional.",
+    "inherits": "ieee",
+    "removed_fields": [
+      "latex_source_file",
+      "latex_pdf_file",
+      "cover_letter",
+      "figure_files",
+      "supplementary_files",
+      "portal_article_type",
+      "competing_interests_file",
+      "author_response_file",
+      "title_page_file",
+      "submission_requirements",
+      "additional_information",
+      "peer_review_type"
+    ]
   },
   "ieee_tits": {
     "name": "IEEE Transactions on Intelligent Transportation Systems",
@@ -3640,6 +3634,11 @@
     ],
     "unverified": [
       "Input selectors and authenticated wizard layout are fixture-tested only. Author lists, custom widgets, declarations, and navigation are manual."
+    ],
+    "description": "Attended form filling; fixture-tested only.",
+    "inherits": "ieee",
+    "removed_fields": [
+      "keywords"
     ],
     "fields": [
       {
@@ -3658,34 +3657,15 @@
       },
       {
         "id": "title",
-        "label": "Title",
-        "type": "text",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15)."
       },
       {
         "id": "abstract",
-        "label": "Abstract",
-        "type": "textarea",
-        "required": true,
-        "autofill": "extract",
         "help": "150-250 words, one paragraph; no displayed equations, tables, abbreviations, footnotes or references. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15)."
       },
       {
         "id": "authors",
-        "label": "Authors",
-        "type": "authorlist",
-        "required": true,
-        "autofill": "extract",
-        "help": "Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15). One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.",
-        "fields": [
-          "name",
-          "email?",
-          "affiliation?",
-          "orcid?",
-          "corresponding"
-        ]
+        "help": "Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15). One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers."
       },
       {
         "id": "free_keywords",
@@ -3720,21 +3700,13 @@
       {
         "id": "manuscript_file",
         "label": "Manuscript",
-        "type": "file",
-        "required": true,
-        "autofill": "filemap",
         "help": "IEEE double-column template, single-spaced. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15)."
       },
       {
         "id": "cover_letter",
-        "label": "Cover letter",
-        "type": "file",
-        "required": false,
-        "autofill": "filemap",
         "help": "Resubmissions of previously rejected papers must state the rejection history and the prior paper ID in the cover letter. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15)."
       }
-    ],
-    "description": "Attended form filling; fixture-tested only."
+    ]
   },
   "acm_tosn": {
     "name": "ACM Transactions on Sensor Networks",
@@ -3942,53 +3914,28 @@
       },
       {
         "id": "title",
-        "label": "Title",
-        "type": "text",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions. "
       },
       {
         "id": "abstract",
-        "label": "Abstract",
-        "type": "textarea",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions. "
       },
       {
         "id": "authors",
-        "label": "Authors",
-        "type": "authorlist",
-        "required": true,
-        "autofill": "extract",
-        "help": "Source: https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.",
-        "fields": [
-          "name",
-          "email?",
-          "affiliation?",
-          "orcid?",
-          "corresponding"
-        ]
+        "help": "Source: https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers."
       },
       {
         "id": "manuscript_file",
         "label": "Manuscript",
-        "type": "file",
-        "required": true,
-        "autofill": "filemap",
         "help": "Source: https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions. "
       },
       {
         "id": "figure_files",
-        "label": "Figures",
-        "type": "filelist",
-        "required": false,
-        "autofill": "filemap",
         "help": "Source: https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions. Optional separate figure assets; upload widget is unverified."
       }
     ],
-    "description": "Preparation and validation; IEEE Author Portal URL unverified."
+    "description": "Preparation and validation; IEEE Author Portal URL unverified.",
+    "inherits": "ieee"
   },
   "ieee_twc": {
     "name": "IEEE Transactions on Wireless Communications",
@@ -4020,45 +3967,24 @@
       },
       {
         "id": "title",
-        "label": "Title",
-        "type": "text",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines. "
       },
       {
         "id": "abstract",
-        "label": "Abstract",
-        "type": "textarea",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines. "
       },
       {
         "id": "authors",
-        "label": "Authors",
-        "type": "authorlist",
-        "required": true,
-        "autofill": "extract",
-        "help": "Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.",
-        "fields": [
-          "name",
-          "email?",
-          "affiliation?",
-          "orcid?",
-          "corresponding"
-        ]
+        "help": "Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers."
       },
       {
         "id": "manuscript_file",
         "label": "Manuscript",
-        "type": "file",
-        "required": true,
-        "autofill": "filemap",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines. "
       }
     ],
-    "description": "Attended form filling; fixture-tested only."
+    "description": "Attended form filling; fixture-tested only.",
+    "inherits": "ieee"
   },
   "ieee_tnse": {
     "name": "IEEE Transactions on Network Science and Engineering",
@@ -4078,53 +4004,29 @@
     "fields": [
       {
         "id": "title",
-        "label": "Title",
-        "type": "text",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines. "
       },
       {
         "id": "abstract",
-        "label": "Abstract",
-        "type": "textarea",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines. "
       },
       {
         "id": "authors",
-        "label": "Authors",
-        "type": "authorlist",
-        "required": true,
-        "autofill": "extract",
-        "help": "Source: https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.",
-        "fields": [
-          "name",
-          "email?",
-          "affiliation?",
-          "orcid?",
-          "corresponding"
-        ]
+        "help": "Source: https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers."
       },
       {
         "id": "manuscript_file",
         "label": "Manuscript",
-        "type": "file",
-        "required": true,
-        "autofill": "filemap",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines. "
       },
       {
         "id": "keywords",
         "label": "Keywords",
-        "type": "textarea",
-        "required": false,
-        "autofill": "extract",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-tnse/policies-guidelines. "
       }
     ],
-    "description": "Attended form filling; fixture-tested only."
+    "description": "Attended form filling; fixture-tested only.",
+    "inherits": "ieee"
   },
   "ieee_iot": {
     "name": "IEEE Internet of Things Journal",
@@ -4144,45 +4046,24 @@
     "fields": [
       {
         "id": "title",
-        "label": "Title",
-        "type": "text",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://ieee-iotj.org/guidelines-for-authors/. "
       },
       {
         "id": "abstract",
-        "label": "Abstract",
-        "type": "textarea",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://ieee-iotj.org/guidelines-for-authors/. "
       },
       {
         "id": "authors",
-        "label": "Authors",
-        "type": "authorlist",
-        "required": true,
-        "autofill": "extract",
-        "help": "Source: https://ieee-iotj.org/guidelines-for-authors/. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.",
-        "fields": [
-          "name",
-          "email?",
-          "affiliation?",
-          "orcid?",
-          "corresponding"
-        ]
+        "help": "Source: https://ieee-iotj.org/guidelines-for-authors/. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers."
       },
       {
         "id": "manuscript_file",
         "label": "Manuscript",
-        "type": "file",
-        "required": true,
-        "autofill": "filemap",
         "help": "Source: https://ieee-iotj.org/guidelines-for-authors/. "
       }
     ],
-    "description": "Attended form filling; fixture-tested only."
+    "description": "Attended form filling; fixture-tested only.",
+    "inherits": "ieee"
   },
   "ieee_jsac": {
     "name": "IEEE Journal on Selected Areas in Communications",
@@ -4203,45 +4084,38 @@
     "fields": [
       {
         "id": "title",
-        "label": "Title",
-        "type": "text",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines. "
       },
       {
         "id": "abstract",
-        "label": "Abstract",
-        "type": "textarea",
-        "required": true,
-        "autofill": "extract",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines. "
       },
       {
         "id": "authors",
-        "label": "Authors",
-        "type": "authorlist",
-        "required": true,
-        "autofill": "extract",
-        "help": "Source: https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.",
-        "fields": [
-          "name",
-          "email?",
-          "affiliation?",
-          "orcid?",
-          "corresponding"
-        ]
+        "help": "Source: https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers."
       },
       {
         "id": "manuscript_file",
         "label": "Manuscript",
-        "type": "file",
-        "required": true,
-        "autofill": "filemap",
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines. "
       }
     ],
-    "description": "Attended form filling; fixture-tested only."
+    "description": "Attended form filling; fixture-tested only.",
+    "inherits": "ieee",
+    "removed_fields": [
+      "latex_source_file",
+      "latex_pdf_file",
+      "cover_letter",
+      "figure_files",
+      "supplementary_files",
+      "portal_article_type",
+      "competing_interests_file",
+      "author_response_file",
+      "title_page_file",
+      "submission_requirements",
+      "additional_information",
+      "peer_review_type"
+    ]
   },
   "infocom_2026": {
     "name": "IEEE INFOCOM 2026",
@@ -4668,5 +4542,190 @@
       "paper_deadline": "2025-05-15 AoE",
       "supplement_deadline": "2025-05-22 AoE"
     }
+  },
+  "ieee": {
+    "name": "IEEE Author Portal (generic base)",
+    "full_name": "IEEE Author Portal / ReX shared profile",
+    "platform": "rex",
+    "venue_type": "journal",
+    "submission_url": "",
+    "submission_guide": "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_start-new-submission.html",
+    "site_url": "https://journals.ieeeauthorcenter.ieee.org/",
+    "anonymous": false,
+    "source_urls": [
+      "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_start-new-submission.html",
+      "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html",
+      "https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+      "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf"
+    ],
+    "unverified": [
+      "Generic IEEE profile only: use ieee:<journal-code> to open a target. Journal-specific Information for Authors and anonymity policy must be checked manually.",
+      "ReX input bindings are synthetic-fixture hypotheses; no live portal was tested."
+    ],
+    "description": "Use ieee:<journal-code> for any IEEE Author Portal journal; generic checks only unless a sourced profile exists.",
+    "fields": [
+      {
+        "id": "title",
+        "label": "Title",
+        "type": "text",
+        "help": " Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_title.html",
+        "required": true,
+        "autofill": "extract"
+      },
+      {
+        "id": "abstract",
+        "label": "Abstract",
+        "type": "textarea",
+        "help": " Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_abstract.html",
+        "required": true,
+        "autofill": "extract"
+      },
+      {
+        "id": "authors",
+        "label": "Authors",
+        "type": "authorlist",
+        "help": "One line per author: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Copy only known metadata; confirm email, country/location and affiliations for each author in the portal. ORCID connection is attended. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_author-details.html",
+        "required": true,
+        "autofill": "extract",
+        "fields": [
+          "name",
+          "email?",
+          "affiliation?",
+          "orcid?",
+          "corresponding"
+        ]
+      },
+      {
+        "id": "manuscript_file",
+        "label": "Manuscript PDF or Word document",
+        "type": "file",
+        "help": "PDF preparation copy or Word main document. Portal main-document formats vary by journal: the documented flow uses Word or LaTeX plus compiled PDF. For LaTeX set latex_source_file and latex_pdf_file; a standalone PDF is not a universal portal option. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+        "required": true,
+        "autofill": "filemap",
+        "accept": [
+          ".pdf",
+          ".doc",
+          ".docx"
+        ]
+      },
+      {
+        "id": "keywords",
+        "label": "Keywords / Index Terms",
+        "type": "textarea",
+        "help": "Use standardized Index Terms; alphabetical order is style guidance, not a journal-specific keyword count. Source: https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf",
+        "autofill": "extract"
+      },
+      {
+        "id": "latex_source_file",
+        "label": "Main Document - LaTeX",
+        "type": "file",
+        "help": "Optional LaTeX submission route. Select this manuscript type yourself; archives require manual Select Main File confirmation. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html",
+        "autofill": "filemap",
+        "accept": [
+          ".tex",
+          ".zip",
+          ".tar.gz"
+        ],
+        "required_if": "latex_pdf_file"
+      },
+      {
+        "id": "latex_pdf_file",
+        "label": "Main Document - LaTeX PDF",
+        "type": "file",
+        "help": "Compiled PDF of the same LaTeX main document; required when source is supplied. manuscript_file may point to the same PDF. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-latex.html",
+        "autofill": "filemap",
+        "accept": [
+          ".pdf"
+        ],
+        "required_if": "latex_source_file"
+      },
+      {
+        "id": "cover_letter",
+        "label": "Cover letter",
+        "type": "file",
+        "help": "Optional additional file when requested by the journal; neither a universal requirement nor universal format restriction is asserted. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+        "autofill": "filemap"
+      },
+      {
+        "id": "figure_files",
+        "label": "Figures",
+        "type": "filelist",
+        "help": "Optional additional files; labels/descriptions and upload dialogs are manual. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+        "autofill": "filemap"
+      },
+      {
+        "id": "supplementary_files",
+        "label": "Supplementary files",
+        "type": "filelist",
+        "help": "Optional additional manuscript files; journal-specific categories are manual. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+        "autofill": "filemap"
+      },
+      {
+        "id": "portal_article_type",
+        "label": "Portal Article Type",
+        "type": "text",
+        "help": "Copy an exact option from the journal portal. Options differ by journal; this is distinct from a configured preparation stage selector (article_type). Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html",
+        "autofill": "classify"
+      },
+      {
+        "id": "competing_interests_file",
+        "label": "Conflict of interest statement",
+        "type": "file",
+        "help": "Map an existing statement only. The no-conflicts checkbox is an author declaration. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+        "autofill": "filemap",
+        "accept": [
+          ".pdf",
+          ".rtf",
+          ".doc",
+          ".docx"
+        ]
+      },
+      {
+        "id": "author_response_file",
+        "label": "Author response (revision)",
+        "type": "file",
+        "help": "Required by the documented revision workflow; revision applicability is confirmed manually. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+        "autofill": "filemap",
+        "accept": [
+          ".doc",
+          ".docx",
+          ".pdf",
+          ".rtf",
+          ".txt"
+        ]
+      },
+      {
+        "id": "title_page_file",
+        "label": "Title page (double anonymized)",
+        "type": "file",
+        "help": "When required by the selected peer review type. Confirm anonymity manually; use validate --anonymous for an arbitrary target. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_upload-manuscript.html",
+        "autofill": "filemap",
+        "accept": [
+          ".doc",
+          ".docx"
+        ]
+      },
+      {
+        "id": "submission_requirements",
+        "label": "Submission requirement confirmations",
+        "type": "textarea",
+        "help": "The author must review and check each journal-specific requirement. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html",
+        "autofill": "never"
+      },
+      {
+        "id": "additional_information",
+        "label": "Additional Information declarations",
+        "type": "textarea",
+        "help": "Journal-specific questions, consent, licenses and payment choices require the author. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_additional-information.html",
+        "autofill": "never"
+      },
+      {
+        "id": "peer_review_type",
+        "label": "Peer review type",
+        "type": "text",
+        "help": "Author selects the review type if the journal permits; it may require replacing files. Source: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_article-type.html",
+        "autofill": "never"
+      }
+    ]
   }
 }

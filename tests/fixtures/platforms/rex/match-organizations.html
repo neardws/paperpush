@@ -1,0 +1,13 @@
+<!doctype html>
+<!-- Synthetic fixture modeled on public workflow text: https://rex-docs.atypon.com/ieee-rex/author_portal/t_auth_match-organizations.html
+Fetched 2026-10-18. Editable correction inputs are hypotheses, not captured live DOM.
+No authenticated IEEE portal was accessed. -->
+<main><h1>Match Organizations</h1><article><h2>Not Matched</h2><label>Find Organization<input type="search"></label><button>Organization is not listed</button></article>
+<button>Confirm</button><button>Save</button><button>Save and Continue</button><button>Continue</button><button>Submit</button></main>
+<script>
+window.clicks = [];
+window.changes = 0;
+document.addEventListener('click', e => window.clicks.push(e.target.textContent));
+document.addEventListener('change', () => window.changes++);
+document.addEventListener('submit', e => { e.preventDefault(); window.clicks.push('FORM SUBMIT'); });
+</script>

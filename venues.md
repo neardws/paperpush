@@ -1,7 +1,7 @@
 ## Supported venues
 
 <!-- BEGIN SUPPORTED VENUES -->
-_41 supported venues (auto-generated from `paperpush/venues.json`)._
+_42 supported venues (auto-generated from `paperpush/venues.json`)._
 
 | Slug | Venue | Venue type | Submission platform | Description | Submit walkthrough |
 | --- | --- | --- | --- | --- | --- |
@@ -20,6 +20,7 @@ _41 supported venues (auto-generated from `paperpush/venues.json`)._
 | `discrete_mathematics` | [Discrete Mathematics](https://www.sciencedirect.com/journal/discrete-mathematics) | Journal | Editorial Manager | Elsevier journal publishing original research and survey articles across combinatorics, graph theory, and the broader field of discrete mathematics. | ✅ 2026-09-01 |
 | `genome_biology` | [Genome Biology](https://genomebiology.biomedcentral.com) | Journal | Springer Nature Snapp | Open-access journal publishing peer-reviewed research and methods across all areas of biology and biomedicine studied from a genomic and post-genomic perspective. | ✅ 2026-09-01 |
 | `iclr_2027` | [ICLR 2027](https://iclr.cc/Conferences/2027) | Conference | OpenReview | Conference on representation learning, deep learning, and their applications, covering machine learning theory, methods, and practice. | ✅ 2026-09-01 |
+| `ieee` | [IEEE Author Portal (generic base)](https://journals.ieeeauthorcenter.ieee.org/) | Journal | IEEE Author Portal / ReX | Use ieee:<journal-code> for any IEEE Author Portal journal; generic checks only unless a sourced profile exists. | ❌ |
 | `ieee_iot` | [IEEE Internet of Things Journal](https://ieee-iotj.org/) | Journal | IEEE Author Portal / ReX | Attended form filling; fixture-tested only. | ❌ |
 | `ieee_jsac` | [IEEE Journal on Selected Areas in Communications](https://www.comsoc.org/publications/journals/ieee-jsac) | Journal | ScholarOne Manuscripts | Attended form filling; fixture-tested only. | ❌ |
 | `ieee_tits` | [IEEE Transactions on Intelligent Transportation Systems](https://ieee-itss.org/pub/t-its/) | Journal | IEEE Author Portal / ReX | Attended form filling; fixture-tested only. | ❌ |
