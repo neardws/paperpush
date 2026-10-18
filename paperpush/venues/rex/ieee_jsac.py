@@ -1,5 +1,5 @@
 """IEEE Journal on Selected Areas in Communications: configuration binding; no live-portal verification."""
 
-from .configured import ConfiguredScholarOneVenue
+from .main import RexVenue
 
-VENUE = ConfiguredScholarOneVenue("ieee_jsac")
+VENUE = RexVenue("ieee_jsac")

@@ -5242,7 +5242,8 @@
     ],
     "retrieved": "2026-10-18",
     "notes": [
-      "UNVERIFIED: https://www.computer.org/csdl/journal/tm/write-for-us/15045: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
+      "UNVERIFIED: https://www.computer.org/csdl/journal/tm/write-for-us/15045: guideline fetch blocked or returned an empty shell/404; review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced.",
+      "IEEE journals use IEEE Author Portal (confirmed by the user, 2026-10-18); the journal code is not yet verified, so the portal URL is blank and opening the portal is disabled. Once the code is known, use ieee:<code> or set submission_url to https://ieee.atyponrex.com/journal/<code>."
     ],
     "inherits": "ieee"
   },
@@ -5252,7 +5253,8 @@
     ],
     "retrieved": "2026-10-18",
     "notes": [
-      "UNVERIFIED: https://www.computer.org/csdl/journal/td/write-for-us/15045: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
+      "UNVERIFIED: https://www.computer.org/csdl/journal/td/write-for-us/15045: guideline fetch blocked or returned an empty shell/404; review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced.",
+      "IEEE journals use IEEE Author Portal (confirmed by the user, 2026-10-18); the journal code is not yet verified, so the portal URL is blank and opening the portal is disabled. Once the code is known, use ieee:<code> or set submission_url to https://ieee.atyponrex.com/journal/<code>."
     ],
     "inherits": "ieee"
   },
@@ -5533,7 +5535,10 @@
         "Upload both single-column and double-column versions as instructed by the selected special issue. The second upload must be mapped manually."
       ]
     },
-    "inherits": "ieee"
+    "inherits": "ieee",
+    "notes": [
+      "UNVERIFIED: IEEE Author Portal journal code / portal URL for JSAC not verified; left blank. Use ieee:<code> once the code is known."
+    ]
   },
   "infocom_2026": {
     "source_urls": [

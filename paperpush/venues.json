@@ -3514,7 +3514,7 @@
     "name": "IEEE Transactions on Mobile Computing",
     "full_name": "IEEE Transactions on Mobile Computing",
     "venue_type": "journal",
-    "platform": "scholarone",
+    "platform": "rex",
     "submission_url": "",
     "submission_guide": "https://www.computer.org/csdl/journal/tm/write-for-us/15045",
     "site_url": "https://www.computer.org/csdl/journal/tm",
@@ -3523,7 +3523,8 @@
       "https://www.computer.org/csdl/journal/tm/write-for-us/15045"
     ],
     "unverified": [
-      "https://www.computer.org/csdl/journal/tm/write-for-us/15045: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
+      "https://www.computer.org/csdl/journal/tm/write-for-us/15045: guideline fetch blocked or returned an empty shell/404; review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced.",
+      "IEEE journals use IEEE Author Portal (confirmed by the user, 2026-10-18); the journal code is not yet verified, so the portal URL is blank and opening the portal is disabled. Once the code is known, use ieee:<code> or set submission_url to https://ieee.atyponrex.com/journal/<code>."
     ],
     "fields": [
       {
@@ -3548,28 +3549,14 @@
         "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. "
       }
     ],
-    "description": "Preparation and validation only; portal URL unverified. Platform assignment is provisional.",
-    "inherits": "ieee",
-    "removed_fields": [
-      "latex_source_file",
-      "latex_pdf_file",
-      "cover_letter",
-      "figure_files",
-      "supplementary_files",
-      "portal_article_type",
-      "competing_interests_file",
-      "author_response_file",
-      "title_page_file",
-      "submission_requirements",
-      "additional_information",
-      "peer_review_type"
-    ]
+    "description": "Preparation and validation only; IEEE Author Portal URL unverified.",
+    "inherits": "ieee"
   },
   "ieee_tpds": {
     "name": "IEEE Transactions on Parallel and Distributed Systems",
     "full_name": "IEEE Transactions on Parallel and Distributed Systems",
     "venue_type": "journal",
-    "platform": "scholarone",
+    "platform": "rex",
     "submission_url": "",
     "submission_guide": "https://www.computer.org/csdl/journal/td/write-for-us/15045",
     "site_url": "https://www.computer.org/csdl/journal/td",
@@ -3578,7 +3565,8 @@
       "https://www.computer.org/csdl/journal/td/write-for-us/15045"
     ],
     "unverified": [
-      "https://www.computer.org/csdl/journal/td/write-for-us/15045: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
+      "https://www.computer.org/csdl/journal/td/write-for-us/15045: guideline fetch blocked or returned an empty shell/404; review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced.",
+      "IEEE journals use IEEE Author Portal (confirmed by the user, 2026-10-18); the journal code is not yet verified, so the portal URL is blank and opening the portal is disabled. Once the code is known, use ieee:<code> or set submission_url to https://ieee.atyponrex.com/journal/<code>."
     ],
     "fields": [
       {
@@ -3603,22 +3591,8 @@
         "help": "Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/td/write-for-us/15045. "
       }
     ],
-    "description": "Preparation and validation only; portal URL unverified. Platform assignment is provisional.",
-    "inherits": "ieee",
-    "removed_fields": [
-      "latex_source_file",
-      "latex_pdf_file",
-      "cover_letter",
-      "figure_files",
-      "supplementary_files",
-      "portal_article_type",
-      "competing_interests_file",
-      "author_response_file",
-      "title_page_file",
-      "submission_requirements",
-      "additional_information",
-      "peer_review_type"
-    ]
+    "description": "Preparation and validation only; IEEE Author Portal URL unverified.",
+    "inherits": "ieee"
   },
   "ieee_tits": {
     "name": "IEEE Transactions on Intelligent Transportation Systems",
@@ -3895,7 +3869,8 @@
       "https://vtsociety.org/publication/ieee-transactions-vehicular-technology/guidelines-authors/instructions"
     ],
     "unverified": [
-      "Current Author Portal URL is not directly verifiable; left blank. Author instructions link through a mail-security redirect."
+      "Current Author Portal URL is not directly verifiable; left blank. Author instructions link through a mail-security redirect.",
+      "IEEE journals use IEEE Author Portal (confirmed by the user, 2026-10-18); the journal code is not yet verified, so the portal URL is blank and opening the portal is disabled. Once the code is known, use ieee:<code> or set submission_url to https://ieee.atyponrex.com/journal/<code>."
     ],
     "fields": [
       {
@@ -4069,8 +4044,8 @@
     "name": "IEEE Journal on Selected Areas in Communications",
     "full_name": "IEEE Journal on Selected Areas in Communications",
     "venue_type": "journal",
-    "platform": "scholarone",
-    "submission_url": "https://mc.manuscriptcentral.com/jsac-ieee",
+    "platform": "rex",
+    "submission_url": "",
     "submission_guide": "https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines",
     "site_url": "https://www.comsoc.org/publications/journals/ieee-jsac",
     "anonymous": false,
@@ -4079,7 +4054,7 @@
     ],
     "unverified": [
       "Special-issue-specific fields and limits must be checked against that issue CFP; no issue was selected.",
-      "Input selectors and authenticated wizard layout are fixture-tested only. Author lists, custom widgets, declarations, and navigation are manual."
+      "IEEE journals use IEEE Author Portal (confirmed by the user, 2026-10-18); the journal code is not yet verified, so the portal URL is blank and opening the portal is disabled. Once the code is known, use ieee:<code> or set submission_url to https://ieee.atyponrex.com/journal/<code>. The ComSoc guideline page still links ScholarOne (https://mc.manuscriptcentral.com/jsac-ieee); that link is no longer used."
     ],
     "fields": [
       {
@@ -4100,22 +4075,8 @@
         "help": "Source: https://www.comsoc.org/publications/journals/ieee-jsac/policies-guidelines. "
       }
     ],
-    "description": "Attended form filling; fixture-tested only.",
-    "inherits": "ieee",
-    "removed_fields": [
-      "latex_source_file",
-      "latex_pdf_file",
-      "cover_letter",
-      "figure_files",
-      "supplementary_files",
-      "portal_article_type",
-      "competing_interests_file",
-      "author_response_file",
-      "title_page_file",
-      "submission_requirements",
-      "additional_information",
-      "peer_review_type"
-    ]
+    "description": "Preparation and validation; IEEE Author Portal URL unverified.",
+    "inherits": "ieee"
   },
   "infocom_2026": {
     "name": "IEEE INFOCOM 2026",

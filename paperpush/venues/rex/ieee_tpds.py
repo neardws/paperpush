@@ -1,5 +1,5 @@
 """IEEE Transactions on Parallel and Distributed Systems: configuration binding; no live-portal verification."""
 
-from .configured import ConfiguredScholarOneVenue
+from .main import RexVenue
 
-VENUE = ConfiguredScholarOneVenue("ieee_tpds")
+VENUE = RexVenue("ieee_tpds")

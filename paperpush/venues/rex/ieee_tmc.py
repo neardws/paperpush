@@ -1,5 +1,5 @@
 """IEEE Transactions on Mobile Computing: configuration binding; no live-portal verification."""
 
-from .configured import ConfiguredScholarOneVenue
+from .main import RexVenue
 
-VENUE = ConfiguredScholarOneVenue("ieee_tmc")
+VENUE = RexVenue("ieee_tmc")

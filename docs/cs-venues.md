@@ -16,10 +16,9 @@ MCP `describe_venue`, and validation warnings expose the unverified facts.
 
 | Entries | Platform | Data coverage |
 | --- | --- | --- |
-| `ieee_jsac` | ScholarOne | Verified public policy; special-issue limits remain manual |
 | `ieee_twc`, `ieee_tnse`, `ieee_iot`, `ieee_tits` | IEEE Author Portal / ReX | Verified public policy and portal links; T-ITS source provided by Neil (page timestamp 2026-07-15) |
-| `ieee_tvt` | IEEE Author Portal / ReX | Verified public policy; direct portal URL unverified |
-| `ieee_tmc`, `ieee_tpds` | Provisional ScholarOne | Preparation fields only; guidelines/portal unverified |
+| `ieee_tvt`, `ieee_jsac` | IEEE Author Portal / ReX | Verified public policy; journal code / portal URL unverified (left blank); JSAC special-issue limits remain manual |
+| `ieee_tmc`, `ieee_tpds` | IEEE Author Portal / ReX | Preparation fields only; guidelines and journal code / portal URL unverified (left blank) |
 | `acm_tosn`, `acm_csur`, `acm_tist` | Provisional ScholarOne | Preparation fields only; guideline fetch blocked; portal unverified |
 | `infocom_2026` | Provisional EDAS | Preparation fields only; CFP fetch blocked; portal/rules unverified |
 | `mobicom_2026_summer`, `mobicom_2026_winter` | HotCRP | Verified 2026 CFP and cycle deadlines |
@@ -28,9 +27,15 @@ MCP `describe_venue`, and validation warnings expose the unverified facts.
 | `neurips_2025` | OpenReview | Verified **historical 2025** main track; 2026 rules unavailable |
 | `iclr_2027`, `aaai_2027` | OpenReview | Existing recorded drivers restored to listings, explicit editions; AAAI manuscript rules added |
 
-Some IEEE society pages still describe ScholarOne account settings but now link
-new submissions to ReX. The driver uses the published submission link, rather
-than assuming all IEEE titles still use ScholarOne. No IEEE or ACM journal-wide
+All IEEE journals now use IEEE Author Portal (ReX); ScholarOne is no longer
+assumed for any IEEE journal (confirmed by the maintainer, 2026-10-18), even where
+a society page still links ScholarOne (e.g. JSAC). A portal URL is set only when
+the journal code is verified from a public link; otherwise it is left blank so
+the filler cannot open a wrong page, and preparation/validation still work. Once
+you have a journal's code from Author Portal, use `ieee:<code>` (generic IEEE
+checks) or set that entry's `submission_url` to
+`https://ieee.atyponrex.com/journal/<code>` to combine it with the journal's
+sourced rules. ACM journals are unchanged. No IEEE or ACM journal-wide
 page cap is inferred from a paid-overlength threshold.
 
 ## Any IEEE Author Portal journal
