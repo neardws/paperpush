@@ -5,24 +5,48 @@
 # Lines starting with '#' are comments and are ignored.
 
 @venue: ieee_tits
-# submission guide: https://ieee-itss.org/pub/t-its/author-information/
+# submission guide: https://ieee-itss.org/pub/t-its/
 
-# Title (text, optional)
-#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. 
+# Article type (choice, REQUIRED)
+#   Suggested length in IEEE style: Regular 10 pages, Short 6, Practitioner 6, Survey 18; up to 6 extra pages allowed with an overlength charge of $175 per extra page after acceptance. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15).
+#   options: Regular | Short | Practitioner | Survey
+article_type: 
+
+# Title (text, REQUIRED)
+#   Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15).
 title: 
 
-# Abstract (textarea, optional)
-#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. 
+# Abstract (textarea, REQUIRED)
+#   150-250 words, one paragraph; no displayed equations, tables, abbreviations, footnotes or references. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15).
 abstract: |
   
 
-# Authors (authorlist, optional)
-#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+# Authors (authorlist, REQUIRED)
+#   Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15). One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
 authors: |
   
 
-# Manuscript (file, optional)
-#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. 
+# Free keywords (multichoice, optional)
+#   Up to 2 free keywords. Enter comma-separated. At most 6 keywords in total: up to 2 free keywords, 1-2 from the methodology list and 1-2 from the application list. The official lists are not bundled; pick terms from the journal's lists. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15).
+#   select 0-2, comma-separated
+free_keywords: 
+
+# Methodology keywords (multichoice, REQUIRED)
+#   1-2 keywords from the T-ITS methodology list. Enter comma-separated. At most 6 keywords in total: up to 2 free keywords, 1-2 from the methodology list and 1-2 from the application list. The official lists are not bundled; pick terms from the journal's lists. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15).
+#   select 1-2, comma-separated
+methodology_keywords: 
+
+# Application keywords (multichoice, REQUIRED)
+#   1-2 keywords from the T-ITS application list. Enter comma-separated. At most 6 keywords in total: up to 2 free keywords, 1-2 from the methodology list and 1-2 from the application list. The official lists are not bundled; pick terms from the journal's lists. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15).
+#   select 1-2, comma-separated
+application_keywords: 
+
+# Manuscript (file, REQUIRED)
+#   IEEE double-column template, single-spaced. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15).
 manuscript_file: 
+
+# Cover letter (file, optional)
+#   Resubmissions of previously rejected papers must state the rejection history and the prior paper ID in the cover letter. Source: https://ieee-itss.org/pub/t-its/ (page timestamp 2026-07-15).
+cover_letter: 
 
 # vim: set filetype=yaml :

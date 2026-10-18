@@ -5256,11 +5256,66 @@
   },
   "ieee_tits": {
     "source_urls": [
-      "https://ieee-itss.org/pub/t-its/author-information/"
+      "https://ieee-itss.org/pub/t-its/"
     ],
     "retrieved": "2026-10-18",
+    "article_type_field": "article_type",
+    "manuscript": {
+      "double_spacing": false,
+      "anonymized": false,
+      "template_required": true,
+      "latex_class": "IEEEtran",
+      "notes": [
+        "IEEE double-column template, single-spaced. Page timestamp of the source: 2026-07-15; where the linked 2010 PDF conflicts, the web page is followed.",
+        "Page caps are the suggested length + 6 extra pages (Regular 16, Short 12, Practitioner 12, Survey 24). Extra pages beyond the suggested length (Regular 10, Short 6, Practitioner 6, Survey 18) carry a $175 per-page overlength charge after acceptance; the schema has no soft limit, so check that manually.",
+        "The source does not say whether references count toward the page length. The cap is enforced on the main text only (max_pages_before_refs), which is never stricter than the journal; confirm whether the whole document must also fit."
+      ]
+    },
+    "article_types": {
+      "Regular": {
+        "manuscript": {
+          "max_pages_before_refs": 16
+        }
+      },
+      "Short": {
+        "manuscript": {
+          "max_pages_before_refs": 12
+        }
+      },
+      "Practitioner": {
+        "manuscript": {
+          "max_pages_before_refs": 12
+        }
+      },
+      "Survey": {
+        "manuscript": {
+          "max_pages_before_refs": 24
+        }
+      }
+    },
+    "abstract": {
+      "min_words": 150,
+      "max_words": 250,
+      "no_references": true,
+      "no_abbreviations": true,
+      "notes": [
+        "One paragraph; no displayed equations, tables or footnotes."
+      ]
+    },
+    "keywords": {
+      "max": 6,
+      "notes": [
+        "At most 2 free keywords, 1-2 from the methodology list and 1-2 from the application list (6 in total)."
+      ]
+    },
+    "cover_letter": {
+      "notes": [
+        "Resubmissions of previously rejected manuscripts must state the rejection history and the prior paper ID in the cover letter."
+      ]
+    },
     "notes": [
-      "UNVERIFIED: https://ieee-itss.org/pub/t-its/author-information/: guideline fetch blocked or returned an empty shell/404. Platform assignment is provisional; portal URL, review policy, field requirements, templates, page/figure/reference limits are unverified and not enforced."
+      "Single-anonymous review.",
+      "Final files for accepted papers: PDF plus LaTeX or Word source, original figure files, and author biographies and photos for Regular and Survey papers."
     ]
   },
   "acm_tosn": {

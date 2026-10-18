@@ -19,7 +19,8 @@ MCP `describe_venue`, and validation warnings expose the unverified facts.
 | `ieee_jsac` | ScholarOne | Verified public policy; special-issue limits remain manual |
 | `ieee_twc`, `ieee_tnse`, `ieee_iot` | IEEE Author Portal / ReX | Verified public policy and portal links |
 | `ieee_tvt` | IEEE Author Portal / ReX | Verified public policy; direct portal URL unverified |
-| `ieee_tmc`, `ieee_tpds`, `ieee_tits` | Provisional ScholarOne | Preparation fields only; guidelines/portal unverified |
+| `ieee_tits` | IEEE Author Portal / ReX | Verified public policy (https://ieee-itss.org/pub/t-its/, page timestamp 2026-07-15) and portal link; page caps enforced on main text only because the source does not say whether references count |
+| `ieee_tmc`, `ieee_tpds` | Provisional ScholarOne | Preparation fields only; guidelines/portal unverified |
 | `acm_tosn`, `acm_csur`, `acm_tist` | Provisional ScholarOne | Preparation fields only; guideline fetch blocked; portal unverified |
 | `infocom_2026` | Provisional EDAS | Preparation fields only; CFP fetch blocked; portal/rules unverified |
 | `mobicom_2026_summer`, `mobicom_2026_winter` | HotCRP | Verified 2026 CFP and cycle deadlines |

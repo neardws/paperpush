@@ -1,5 +1,5 @@
 """IEEE Transactions on Intelligent Transportation Systems: configuration binding; no live-portal verification."""
 
-from .configured import ConfiguredScholarOneVenue
+from ..configured import ConfiguredVenue
 
-VENUE = ConfiguredScholarOneVenue("ieee_tits")
+VENUE = ConfiguredVenue("ieee_tits")
