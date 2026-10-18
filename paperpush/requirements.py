@@ -159,6 +159,8 @@ class ManuscriptRules:
     template_required: Annotated[Optional[bool], PField(description="Must use the venue's style file or template.")] = None
     template_url: Annotated[Optional[str], PField(description="URL of the venue's template.")] = None
     latex_class: Annotated[Optional[str], PField(description="Required LaTeX document class or style file.")] = None
+    latex_options: Annotated[Optional[list[str]], PField(description="Required LaTeX class/package options, when explicitly mandated by the source.")] = None
+    allow_appendix: Annotated[Optional[bool], PField(description="Whether appendices are allowed in the submitted manuscript. None means unspecified.")] = None
     template_layout: Annotated[Optional[TemplateLayout], PField(description="Geometry of the compiled template, checked against the manuscript PDF to catch shrunken margins, font, or line spacing.")] = None
     language: Annotated[Optional[str], PField(description="Mandated language variant, if any.")] = None
     notes: Annotated[list[str], PField(description="Rules with no structured key, one per string.")] = _notes()
@@ -216,6 +218,7 @@ class StatementRules:
 
     required: Annotated[Optional[list[StatementId]], PField(description="Canonical ids of the declarations the manuscript must contain (matched via $aliases).")] = None
     optional: Annotated[Optional[list[StatementId]], PField(description="Declarations the venue accepts but does not require.")] = None
+    required_if: Annotated[dict[str, str], PField(description="Statement id to boolean .sub field; required only when the field is explicitly yes.")] = dataclass_field(default_factory=dict)
     notes: Annotated[list[str], PField(description="Rules with no structured key.")] = _notes()
 
 

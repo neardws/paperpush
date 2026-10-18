@@ -23,6 +23,12 @@ It is easiest to fill out these forms by making an account for the venue of inte
 
 See [DEVELOPMENT.md](DEVELOPMENT.md) for tips on using playwright, debugging, and running unit tests.
 
+For configurable ScholarOne, HotCRP, EDAS, CMT, OpenReview, EasyChair, and IEEE
+Author Portal deployments, see [docs/cs-venues.md](docs/cs-venues.md). Keep each
+conference year/cycle separate, source its portal URL and rules, and mark facts
+that could not be fetched as unverified. Never copy last year's limits as facts
+for a new edition. The configurable filler has no manuscript action clicks.
+
 ## Before opening a pull request
 
 - Run `python tests/sample_subfiles.py` to generate sample subfiles for the new venue.

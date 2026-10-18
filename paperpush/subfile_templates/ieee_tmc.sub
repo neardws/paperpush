@@ -1,0 +1,28 @@
+# paperpush submission file for ieee_tmc  -*- mode: yaml -*-
+# IEEE Transactions on Mobile Computing
+#
+# Edit the values below, then run:  paperpush submit ieee_tmc.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: ieee_tmc
+# submission guide: https://www.computer.org/csdl/journal/tm/write-for-us/15045
+
+# Title (text, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. 
+title: 
+
+# Abstract (textarea, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. 
+abstract: |
+  
+
+# Authors (authorlist, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  
+
+# Manuscript (file, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://www.computer.org/csdl/journal/tm/write-for-us/15045. 
+manuscript_file: 
+
+# vim: set filetype=yaml :

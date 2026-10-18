@@ -121,7 +121,8 @@ def platform_of(venue) -> str:
     (``inherits``), and falls back to a dash for any venue not yet mapped in
     ``PLATFORMS``.
     """
-    return PLATFORMS.get(venue.slug) or PLATFORMS.get(venue.inherits) or "—"
+    configured = {"scholarone": "ScholarOne Manuscripts", "hotcrp": "HotCRP", "edas": "EDAS", "cmt": "Microsoft CMT", "openreview": "OpenReview", "easychair": "EasyChair", "rex": "IEEE Author Portal / ReX"}
+    return configured.get(venue.platform) or PLATFORMS.get(venue.slug) or PLATFORMS.get(venue.inherits) or "—"
 
 
 def _linked_name(venue) -> str:

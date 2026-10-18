@@ -1,0 +1,33 @@
+# paperpush submission file for ieee_twc  -*- mode: yaml -*-
+# IEEE Transactions on Wireless Communications
+#
+# Edit the values below, then run:  paperpush submit ieee_twc.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: ieee_twc
+# submission guide: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines
+
+# Submission stage (choice, REQUIRED)
+#   Preparation selector; initial papers 13 pages, revisions 16, including references and appendices. Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines
+#   options: Initial | Revision
+article_type: Initial
+
+# Title (text, REQUIRED)
+#   Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines. 
+title: An edge intelligence system
+
+# Abstract (textarea, REQUIRED)
+#   Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines. 
+abstract: |
+  research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research
+
+# Authors (authorlist, REQUIRED)
+#   Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  Ada Example | ada@example.edu | Example University |  | yes
+
+# Manuscript (file, REQUIRED)
+#   Source: https://www.comsoc.org/publications/journals/ieee-twc/policies-guidelines. 
+manuscript_file: tests/manuscript_files/ieee_twc/manuscript.pdf
+
+# vim: set filetype=yaml :

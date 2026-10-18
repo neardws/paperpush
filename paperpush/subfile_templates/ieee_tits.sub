@@ -1,0 +1,28 @@
+# paperpush submission file for ieee_tits  -*- mode: yaml -*-
+# IEEE Transactions on Intelligent Transportation Systems
+#
+# Edit the values below, then run:  paperpush submit ieee_tits.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: ieee_tits
+# submission guide: https://ieee-itss.org/pub/t-its/author-information/
+
+# Title (text, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. 
+title: 
+
+# Abstract (textarea, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. 
+abstract: |
+  
+
+# Authors (authorlist, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  
+
+# Manuscript (file, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. 
+manuscript_file: 
+
+# vim: set filetype=yaml :

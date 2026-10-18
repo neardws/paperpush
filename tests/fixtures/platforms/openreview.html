@@ -1,0 +1,12 @@
+<!doctype html><html><body>
+<!-- Synthetic fixture, not an authenticated portal capture. -->
+<form onsubmit="window.submitted = true; return false">
+<input name="title">
+<textarea name="abstract"></textarea>
+<input type="file" name="pdf">
+<textarea name="authors"></textarea>
+<input type="checkbox" name="consent">
+<button type="submit" id="final">Submit / Register / Save and submit</button>
+</form><script>window.submitted = false; window.clicks = 0;
+document.addEventListener('click', () => window.clicks++);</script>
+</body></html>

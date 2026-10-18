@@ -786,6 +786,38 @@
           "description": "Short description of the venue.",
           "type": "string"
         },
+        "platform": {
+          "description": "Reusable portal driver (scholarone, hotcrp, edas, cmt, openreview, easychair), when configured.",
+          "type": "string"
+        },
+        "edition": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Conference edition metadata: year, cycle, and optional deadline strings with timezone. No implicit latest edition.",
+          "type": "object"
+        },
+        "source_urls": {
+          "description": "Public sources for form fields, reviewing policy, and portal URL.",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "unverified": {
+          "description": "Unknown or inaccessible facts; informational, never enforced as requirements.",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "portal_fields": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Optional CSS selectors overriding platform field bindings. These select inputs only; never actions.",
+          "type": "object"
+        },
         "file_type_options": {
           "anyOf": [
             {

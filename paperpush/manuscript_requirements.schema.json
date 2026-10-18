@@ -647,6 +647,31 @@
           ],
           "description": "Required LaTeX document class or style file."
         },
+        "latex_options": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Required LaTeX class/package options, when explicitly mandated by the source."
+        },
+        "allow_appendix": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Whether appendices are allowed in the submitted manuscript. None means unspecified."
+        },
         "template_layout": {
           "anyOf": [
             {
@@ -1072,6 +1097,20 @@
             }
           ],
           "description": "Declarations the venue accepts but does not require."
+        },
+        "required_if": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Statement id to boolean .sub field; required only when the field is explicitly yes."
         },
         "notes": {
           "anyOf": [

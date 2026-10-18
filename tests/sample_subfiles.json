@@ -985,5 +985,161 @@
       "abstract": "We prove a sample theorem about a family of finite combinatorial structures.",
       "manuscript_file": "tests/manuscript_files/arxiv/manuscript.pdf"
     }
+  },
+  "ieee_tmc.sub": {
+    "venue": "ieee_tmc",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/ieee_tmc/manuscript.pdf"
+    }
+  },
+  "ieee_tpds.sub": {
+    "venue": "ieee_tpds",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/ieee_tpds/manuscript.pdf"
+    }
+  },
+  "ieee_tits.sub": {
+    "venue": "ieee_tits",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/ieee_tits/manuscript.pdf"
+    }
+  },
+  "acm_tosn.sub": {
+    "venue": "acm_tosn",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/acm_tosn/manuscript.pdf"
+    }
+  },
+  "acm_csur.sub": {
+    "venue": "acm_csur",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/acm_csur/manuscript.pdf"
+    }
+  },
+  "acm_tist.sub": {
+    "venue": "acm_tist",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/acm_tist/manuscript.pdf"
+    }
+  },
+  "ieee_tvt.sub": {
+    "venue": "ieee_tvt",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/ieee_tvt/manuscript.pdf",
+      "article_type": "Regular (initial)"
+    }
+  },
+  "ieee_twc.sub": {
+    "venue": "ieee_twc",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/ieee_twc/manuscript.pdf",
+      "article_type": "Initial"
+    }
+  },
+  "ieee_tnse.sub": {
+    "venue": "ieee_tnse",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/ieee_tnse/manuscript.pdf"
+    }
+  },
+  "ieee_iot.sub": {
+    "venue": "ieee_iot",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/ieee_iot/manuscript.pdf"
+    }
+  },
+  "ieee_jsac.sub": {
+    "venue": "ieee_jsac",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/ieee_jsac/manuscript.pdf"
+    }
+  },
+  "infocom_2026.sub": {
+    "venue": "infocom_2026",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/infocom_2026/manuscript.pdf"
+    }
+  },
+  "mobicom_2026_summer.sub": {
+    "venue": "mobicom_2026_summer",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/mobicom_2026_summer/manuscript.pdf"
+    }
+  },
+  "mobicom_2026_winter.sub": {
+    "venue": "mobicom_2026_winter",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/mobicom_2026_winter/manuscript.pdf"
+    }
+  },
+  "mobisys_2026.sub": {
+    "venue": "mobisys_2026",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/mobisys_2026/manuscript.pdf"
+    }
+  },
+  "sensys_2026_nov.sub": {
+    "venue": "sensys_2026_nov",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "Ada Example | ada@example.edu | Example University |  | yes",
+      "manuscript_file": "tests/manuscript_files/sensys_2026_nov/manuscript.pdf",
+      "article_type": "Full paper"
+    }
+  },
+  "neurips_2025.sub": {
+    "venue": "neurips_2025",
+    "fields": {
+      "title": "An edge intelligence system",
+      "abstract": "research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research",
+      "authors": "~Ada_Example1 | Ada Example | example.edu",
+      "manuscript_file": "tests/manuscript_files/neurips_2025/manuscript.pdf"
+    }
   }
 }

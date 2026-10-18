@@ -1,0 +1,33 @@
+# paperpush submission file for neurips_2025  -*- mode: yaml -*-
+# NeurIPS 2025
+#
+# Edit the values below, then run:  paperpush submit neurips_2025.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: neurips_2025
+# submission guide: https://neurips.cc/Conferences/2025/CallForPapers
+
+# Title (text, REQUIRED)
+#   Source: https://neurips.cc/Conferences/2025/CallForPapers. 
+title: 
+
+# Abstract (textarea, REQUIRED)
+#   Source: https://neurips.cc/Conferences/2025/CallForPapers. 
+abstract: |
+  
+
+# Authors (authorlist, REQUIRED)
+#   Source: https://neurips.cc/Conferences/2025/CallForPapers. One line: OpenReview ID | Name | Email suffixes. All authors need updated profiles. Add profiles manually in the attended driver.
+authors: |
+  
+
+# Manuscript (file, REQUIRED)
+#   Source: https://neurips.cc/Conferences/2025/CallForPapers. 
+manuscript_file: 
+
+# Supplementary material (file, optional)
+#   Source: https://neurips.cc/Conferences/2025/CallForPapers. 
+#   each file at most 100 MB
+supplementary_material: 
+
+# vim: set filetype=yaml :

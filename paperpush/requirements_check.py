@@ -232,11 +232,14 @@ def _length_issues(field: Field, path: Path, reqs: ManuscriptRequirements) -> li
     return issues
 
 
-def _heading_issues(field: Field, path: Path, reqs: ManuscriptRequirements) -> list[Issue]:
+def _heading_issues(field: Field, path: Path, reqs: ManuscriptRequirements, values: dict | None = None) -> list[Issue]:
     """WARN on a required section or declaration whose heading is not found."""
     required_sections = list(reqs.sections.required or [])
     required_statements = list(reqs.statements.required or [])
-    if not required_sections and not required_statements:
+    for statement, trigger in reqs.statements.required_if.items():
+        if str((values or {}).get(trigger, "")).strip().lower() == "yes":
+            required_statements.append(statement)
+    if not required_sections and not required_statements and reqs.manuscript.allow_appendix is not False:
         return []
     found = manuscript_headings(path)
     if found is None:
@@ -245,6 +248,8 @@ def _heading_issues(field: Field, path: Path, reqs: ManuscriptRequirements) -> l
     # A single combined heading ("Results and Discussion") satisfies each part.
     combined = {normalize_heading(c) for c in (reqs.sections.combined_allowed or [])}
     issues: list[Issue] = []
+    if reqs.manuscript.allow_appendix is False and any(re.search(r"\bappendi(?:x|ces)\b", heading, re.I) for heading in found):
+        issues.append(Issue(WARNING, field.id, "appendix: the selected submission type does not allow appendices; confirm the detected appendix heading"))
 
     def _has(canonical: str, aliases: dict[str, list[str]]) -> bool:
         wordings = set(aliases.get(canonical, [canonical.lower()]))
@@ -479,6 +484,9 @@ def _template_source_issues(venue: Venue, reqs: ManuscriptRequirements, values: 
                 continue
             seen.add(path)
             for where, text in template_check.iter_latex_sources(path):
+                if reqs.manuscript.latex_class:
+                    for problem in template_check.identity_problems(text, reqs.manuscript.latex_class, reqs.manuscript.latex_options):
+                        issues.append(Issue(WARNING, field.id, f"template: {where} {problem}"))
                 for problem in template_check.source_problems(text):
                     issues.append(Issue(WARNING, field.id, f"template: {where} {problem}"))
     return issues
@@ -508,7 +516,7 @@ def check_manuscript_requirements(venue: Venue, values: dict[str, str]) -> list[
         issues.extend(_size_issues(field, paths, reqs.manuscript.max_file_size_mb, "manuscript file"))
         for path in paths:
             issues.extend(_length_issues(field, path, reqs))
-            issues.extend(_heading_issues(field, path, reqs))
+            issues.extend(_heading_issues(field, path, reqs, values))
             issues.extend(_title_page_issues(field, path, reqs, values))
             issues.extend(_reference_issues(field, path, reqs))
             issues.extend(_template_issues(field, path, reqs))

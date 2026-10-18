@@ -899,6 +899,8 @@ def validate(
     issues: list[Issue] = list(_schema_issues(venue, subfile.values))
     values = subfile.values
 
+    issues.extend(Issue(WARNING, "venue", f"unverified: {note}") for note in venue.unverified)
+
     issues.extend(_upload_size_issues(venue, values))
     if check_links:
         issues.extend(_link_issues(venue, values))

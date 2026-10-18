@@ -69,6 +69,12 @@ python scripts/gen_readme_venues.py
 
 ## Manuscript requirements
 
+CS journal and conference configurations, per-edition updates, source auditing,
+and the fixture-only portal-driver contract are documented in
+[docs/cs-venues.md](docs/cs-venues.md). New venue metadata (`platform`, `edition`,
+`source_urls`, `unverified`, `portal_fields`) is exposed through CLI schema and
+MCP descriptions. The new input-only drivers do not automate wizard navigation.
+
 `paperpush/manuscript_requirements.json` records, per venue slug, what the
 venue's author guidelines require of the manuscript itself. `paperpush validate`
 measures the files a `.sub` names against it (`paperpush/requirements_check.py`),

@@ -28,6 +28,11 @@ The keys of one venue entry (the value under a slug).
 | `site_url` | string | Public homepage URL. |
 | `submission_guide` | string | URL of the author/submission guide. |
 | `description` | string | Short description of the venue. |
+| `platform` | string | Reusable portal driver (scholarone, hotcrp, edas, cmt, openreview, easychair), when configured. |
+| `edition` | map of string | Conference edition metadata: year, cycle, and optional deadline strings with timezone. No implicit latest edition. |
+| `source_urls` | list of string | Public sources for form fields, reviewing policy, and portal URL. |
+| `unverified` | list of string | Unknown or inaccessible facts; informational, never enforced as requirements. |
+| `portal_fields` | map of string | Optional CSS selectors overriding platform field bindings. These select inputs only; never actions. |
 | `file_type_options` | list of string or null | Labels offered by the portal's per-file 'file type' dropdown (venue-level because the same dropdown applies to every upload). |
 | `max_upload_mb` | number or null | Maximum combined size, in megabytes, of all files in one submission. |
 | `anonymous` | boolean | Anonymous (double-blind) review: validate checks the attached files and linked anonymous.4open.science repositories for information identifying the authors. |

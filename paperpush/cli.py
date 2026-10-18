@@ -696,6 +696,9 @@ def _cmd_submit(args: argparse.Namespace) -> int:
         venue_def = get_venue(venue)
     except KeyError:
         venue_def = None
+    if venue_def is not None and venue_def.platform and not venue_def.submission_url:
+        print(f"error: {venue}: portal URL is unverified. Preparation and validation are available; add a sourced portal URL before submission.", file=sys.stderr)
+        return 1
     if venue_def is not None:
         errors = _report_validation(subfile, venue_def, args.subfile)
         if errors:
@@ -983,6 +986,10 @@ def _cmd_schema(args: argparse.Namespace) -> int:
                 "venue": venue.slug,
                 "name": venue.name,
                 "submission_guide": venue.submission_guide,
+                "platform": venue.platform,
+                "edition": venue.edition,
+                "source_urls": venue.source_urls,
+                "unverified": venue.unverified,
                 "fields": field_schema(venue),
             },
             indent=2,

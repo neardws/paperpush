@@ -1,0 +1,28 @@
+# paperpush submission file for ieee_iot  -*- mode: yaml -*-
+# IEEE Internet of Things Journal
+#
+# Edit the values below, then run:  paperpush submit ieee_iot.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: ieee_iot
+# submission guide: https://ieee-iotj.org/guidelines-for-authors/
+
+# Title (text, REQUIRED)
+#   Source: https://ieee-iotj.org/guidelines-for-authors/. 
+title: An edge intelligence system
+
+# Abstract (textarea, REQUIRED)
+#   Source: https://ieee-iotj.org/guidelines-for-authors/. 
+abstract: |
+  research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research
+
+# Authors (authorlist, REQUIRED)
+#   Source: https://ieee-iotj.org/guidelines-for-authors/. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  Ada Example | ada@example.edu | Example University |  | yes
+
+# Manuscript (file, REQUIRED)
+#   Source: https://ieee-iotj.org/guidelines-for-authors/. 
+manuscript_file: tests/manuscript_files/ieee_iot/manuscript.pdf
+
+# vim: set filetype=yaml :

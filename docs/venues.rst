@@ -9,6 +9,10 @@ authoritative, always-current list is available on the command line:
 
    paperpush --venues
 
+IEEE/ACM and conference editions include experimental attended drivers and
+preparation-only configurations. See :doc:`cs-venues` for sourced coverage,
+unverified items, and the fixture-only testing status.
+
 The venues supported at the time of writing are below. For a complete
 description of each venue's fields and portal, see ``venues.md`` in the
 repository. The keys a venue entry may carry are documented in the

@@ -1,0 +1,28 @@
+# paperpush submission file for mobisys_2026  -*- mode: yaml -*-
+# ACM MobiSys 2026
+#
+# Edit the values below, then run:  paperpush submit mobisys_2026.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: mobisys_2026
+# submission guide: https://www.sigmobile.org/mobisys/2026/call_for_papers/
+
+# Title (text, REQUIRED)
+#   Source: https://www.sigmobile.org/mobisys/2026/call_for_papers/. 
+title: 
+
+# Abstract (textarea, REQUIRED)
+#   Source: https://www.sigmobile.org/mobisys/2026/call_for_papers/. 
+abstract: |
+  
+
+# Authors (authorlist, REQUIRED)
+#   Source: https://www.sigmobile.org/mobisys/2026/call_for_papers/. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  
+
+# Manuscript (file, REQUIRED)
+#   Source: https://www.sigmobile.org/mobisys/2026/call_for_papers/. 
+manuscript_file: 
+
+# vim: set filetype=yaml :

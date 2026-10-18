@@ -1,0 +1,37 @@
+# paperpush submission file for sensys_2026_nov  -*- mode: yaml -*-
+# ACM SenSys 2026 (November cycle)
+#
+# Edit the values below, then run:  paperpush submit sensys_2026_nov.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: sensys_2026_nov
+# submission guide: https://sensys.acm.org/2026/cfp.html
+
+# Paper type (choice, REQUIRED)
+#   Preparation selector: full 12 pages; Experiences short 6 pages. Source: https://sensys.acm.org/2026/cfp.html
+#   options: Full paper | Experiences short paper
+article_type: Full paper
+
+# Title (text, REQUIRED)
+#   Source: https://sensys.acm.org/2026/cfp.html. 
+title: An edge intelligence system
+
+# Abstract (textarea, REQUIRED)
+#   Source: https://sensys.acm.org/2026/cfp.html. 
+abstract: |
+  research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research
+
+# Authors (authorlist, REQUIRED)
+#   Source: https://sensys.acm.org/2026/cfp.html. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  Ada Example | ada@example.edu | Example University |  | yes
+
+# Manuscript (file, REQUIRED)
+#   Source: https://sensys.acm.org/2026/cfp.html. 
+manuscript_file: tests/manuscript_files/sensys_2026_nov/manuscript.pdf
+
+# Research with human participants (boolean, optional)
+#   Preparation selector for the conditional ethics statement; not a verified portal widget. Source: https://sensys.acm.org/2026/cfp.html
+human_participants: 
+
+# vim: set filetype=yaml :

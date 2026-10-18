@@ -242,6 +242,28 @@ def source_problems(text: str) -> Iterator[str]:
         yield f"uses negative \\vspace {negatives} times to pull text together"
 
 
+def identity_problems(text: str, expected: str, options: list[str] | None = None) -> Iterator[str]:
+    """Check a main source's class/style and required options, ignoring comments.
+
+    This recognizes IEEEtran/acmart document classes and conference style
+    packages. It does not infer a PDF's template from appearance or fonts.
+    Fragments without a documentclass are checked with their main file instead.
+    """
+    body = _strip_comments(text)
+    declaration = re.compile(r"\\(documentclass|usepackage)\s*(?:\[([^\]]*)\]\s*)?\{([^}]+)\}")
+    declarations = list(declaration.finditer(body))
+    if not any(m[1] == "documentclass" for m in declarations):
+        return
+    matches = [m for m in declarations if expected in [s.strip() for s in m[3].split(",")]]
+    if not matches:
+        yield f"expected LaTeX class/style {expected!r} was not found"
+        return
+    active = {option.strip() for m in matches for option in (m[2] or "").split(",")}
+    missing = set(options or []) - active
+    if missing:
+        yield f"{expected} is missing required options: {', '.join(sorted(missing))}"
+
+
 def iter_latex_sources(path: Path) -> Iterator[tuple[str, str]]:
     """``(where, text)`` for each ``.tex`` file at ``path`` or inside it (an archive)."""
     from .sensitive import ARCHIVE_EXTS, MAX_TEXT_BYTES, _decode, _iter_archive_members

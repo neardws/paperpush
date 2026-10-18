@@ -133,6 +133,15 @@ def test_submit_command_for_each_subfile(scenario, monkeypatch):
 
     rc = main(["submit", str(scenario.path)])
 
+    # Preparation-only configurations deliberately have no guessed portal URL.
+    # They must stop even with a stubbed runner and stored credentials.
+    from paperpush.database import get_venue
+
+    venue = get_venue(scenario.venue)
+    if venue.platform and not venue.submission_url:
+        assert rc == 1
+        assert not ran
+        return
     assert rc == 0
     assert ran, f"submit did not invoke the runner for {scenario.filename}"
     call_args, _call_kwargs = ran[0]

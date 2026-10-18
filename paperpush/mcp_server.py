@@ -196,6 +196,9 @@ def list_supported_venues(include_deprecated: bool = False) -> list[dict[str, An
             "description": venue.description,
             "submission_url": venue.submission_url,
             "submission_guide": venue.submission_guide,
+            "platform": venue.platform,
+            "edition": venue.edition,
+            "unverified": venue.unverified,
             "login_required": venues_pkg.login_required(venue.slug),
             "field_count": len(venue.fields),
             "required_field_count": sum(1 for f in venue.fields if f.required),
@@ -230,6 +233,10 @@ def describe_venue(venue: str) -> dict[str, Any]:
         "submission_url": resolved.submission_url,
         "submission_guide": resolved.submission_guide,
         "site_url": resolved.site_url,
+        "platform": resolved.platform,
+        "edition": resolved.edition,
+        "source_urls": resolved.source_urls,
+        "unverified": resolved.unverified,
         "login_required": venues_pkg.login_required(resolved.slug),
         "max_upload_mb": resolved.max_upload_mb,
         "anonymous": resolved.anonymous,
@@ -778,6 +785,13 @@ def submit(
     the default leaves it open at the step that failed so the page can be read.
     """
     path, _, venue = _load_subfile(subfile, manuscript_dir)
+
+    if venue.platform and not venue.submission_url:
+        return {"status": "blocked", "venue": venue.slug, "reason": "The portal URL is unverified. Preparation and validation are available; add a sourced portal URL before submission."}
+
+    impl = venues_pkg.try_get_venue_impl(venue.slug)
+    if getattr(impl, "requires_terminal", False):
+        return {"status": "action_required", "venue": venue.slug, "command": _paperpush_command("submit", str(path)), "reason": "This experimental driver needs terminal input while the author navigates wizard pages. Run the command in your terminal; detached MCP cannot answer its prompts."}
 
     try:
         venues_pkg.get_runner(venue.slug)

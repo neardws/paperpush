@@ -1,0 +1,28 @@
+# paperpush submission file for ieee_tits  -*- mode: yaml -*-
+# IEEE Transactions on Intelligent Transportation Systems
+#
+# Edit the values below, then run:  paperpush submit ieee_tits.sub
+# Lines starting with '#' are comments and are ignored.
+
+@venue: ieee_tits
+# submission guide: https://ieee-itss.org/pub/t-its/author-information/
+
+# Title (text, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. 
+title: An edge intelligence system
+
+# Abstract (textarea, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. 
+abstract: |
+  research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research research
+
+# Authors (authorlist, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. One per line: Name | email | affiliation | ORCID | corresponding (yes/no). Exactly one corresponding author. Author widgets are manual in the attended drivers.
+authors: |
+  Ada Example | ada@example.edu | Example University |  | yes
+
+# Manuscript (file, optional)
+#   Unverified preparation field; portal requirements are unknown. Source: https://ieee-itss.org/pub/t-its/author-information/. 
+manuscript_file: tests/manuscript_files/ieee_tits/manuscript.pdf
+
+# vim: set filetype=yaml :
